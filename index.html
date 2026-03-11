@@ -97,6 +97,7 @@
     h1 {
       font-size: clamp(34px, 3.8vw, 58px);
       line-height: 0.98;
+      letter-spacing: -0.03em;
       max-width: 520px;
     }
 
@@ -121,14 +122,14 @@
       font-size: 20px;
       line-height: 1.5;
       color: var(--ivory-deep);
-      max-width: 620px;
+      max-width: 680px;
     }
 
     .site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(9,9,9,.84);
+      background: rgba(9,9,9,.78);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,.05);
     }
@@ -138,7 +139,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 32px;
       position: relative;
     }
 
@@ -147,7 +148,6 @@
       align-items: center;
       gap: 14px;
       min-width: 0;
-      z-index: 1002;
     }
 
     .brand-mark {
@@ -184,24 +184,50 @@
       white-space: nowrap;
     }
 
+    .nav-links-desktop {
+      display: flex;
+      gap: 26px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-left: auto;
+      align-items: center;
+    }
+
+    .nav-links-desktop a {
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ivory-deep);
+      transition: color .25s ease;
+    }
+
+    .nav-links-desktop a:hover {
+      color: var(--gold-soft);
+    }
+
+    .mobile-menu-wrap {
+      display: none;
+      position: relative;
+      margin-left: auto;
+    }
+
     .menu-button {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 10px 14px;
-      border: 1px solid rgba(255,255,255,.10);
+      padding: 12px 16px;
+      border: 1px solid rgba(255,255,255,.12);
       border-radius: 999px;
       background: rgba(255,255,255,.02);
       color: var(--ivory);
-      font-size: 11px;
-      letter-spacing: .18em;
+      font-size: 12px;
+      letter-spacing: .16em;
       text-transform: uppercase;
-      z-index: 1002;
       transition: border-color .25s ease, color .25s ease, background .25s ease;
     }
 
     .menu-button:hover {
-      border-color: rgba(200,164,106,.45);
+      border-color: rgba(200,164,106,.55);
       color: var(--gold-soft);
     }
 
@@ -209,6 +235,7 @@
       display: inline-flex;
       flex-direction: column;
       gap: 4px;
+      width: 16px;
     }
 
     .menu-icon span {
@@ -216,7 +243,8 @@
       height: 1px;
       background: currentColor;
       display: block;
-      transition: transform .25s ease, opacity .25s ease;
+      transition: transform .28s ease, opacity .28s ease;
+      transform-origin: center;
     }
 
     .menu-button.active .menu-icon span:nth-child(1) {
@@ -235,7 +263,7 @@
       position: absolute;
       top: calc(100% + 12px);
       right: 0;
-      min-width: 280px;
+      width: 300px;
       padding: 18px;
       border-radius: 22px;
       background: rgba(14,14,14,.98);
@@ -243,23 +271,25 @@
       box-shadow: var(--shadow);
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-8px);
+      pointer-events: none;
+      transform: translateY(-10px);
       transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
-      z-index: 1001;
+      z-index: 2000;
     }
 
     .nav-menu.open {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto;
       transform: translateY(0);
     }
 
-    .nav-links {
+    .nav-links-mobile {
       display: grid;
       gap: 6px;
     }
 
-    .nav-links a {
+    .nav-links-mobile a {
       display: block;
       padding: 14px 12px;
       border-radius: 14px;
@@ -267,12 +297,13 @@
       letter-spacing: .14em;
       text-transform: uppercase;
       color: var(--ivory-deep);
-      transition: background .25s ease, color .25s ease;
+      transition: background .25s ease, color .25s ease, transform .25s ease;
     }
 
-    .nav-links a:hover {
+    .nav-links-mobile a:hover {
       background: rgba(255,255,255,.03);
       color: var(--gold-soft);
+      transform: translateX(2px);
     }
 
     .hero {
@@ -313,7 +344,7 @@
 
     .hero-copy .subcopy {
       margin-top: 22px;
-      max-width: 560px;
+      max-width: 600px;
       font-size: 17px;
       line-height: 1.75;
       color: var(--muted);
@@ -602,6 +633,19 @@
         padding: 12px 0;
       }
 
+      .nav-links-desktop {
+        display: none;
+      }
+
+      .mobile-menu-wrap {
+        display: block;
+      }
+
+      .nav-menu {
+        width: min(300px, calc(100vw - 28px));
+        right: 0;
+      }
+
       .section {
         padding: 72px 0;
       }
@@ -644,12 +688,6 @@
       p {
         font-size: 17px;
       }
-
-      .nav-menu {
-        left: 0;
-        right: 0;
-        min-width: 0;
-      }
     }
   </style>
 </head>
@@ -664,31 +702,42 @@
         </div>
       </a>
 
-      <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-        aria-controls="navMenu"
-        type="button"
-      >
-        <span>Menu</span>
-        <span class="menu-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
+      <nav class="nav-links-desktop">
+        <a href="#about">About</a>
+        <a href="#create">What We Create</a>
+        <a href="#motion">Motion</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Avenquell</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <div class="nav-menu" id="navMenu">
-        <nav class="nav-links">
-          <a href="#about">About</a>
-          <a href="#create">What We Create</a>
-          <a href="#motion">Motion</a>
-          <a href="#process">Process</a>
-          <a href="#why">Why Avenquell</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <div class="mobile-menu-wrap">
+        <button
+          class="menu-button"
+          id="menuButton"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          type="button"
+        >
+          <span class="menu-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <nav class="nav-links-mobile">
+            <a href="#about">About</a>
+            <a href="#create">What We Create</a>
+            <a href="#motion">Motion</a>
+            <a href="#process">Process</a>
+            <a href="#why">Why Avenquell</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -716,24 +765,24 @@
           <div class="hero-stats">
             <div class="stat">
               <strong>Visual Focus</strong>
-              <span>Luxury campaign imagery, brand worlds, and elevated digital presence.</span>
+              <span>Luxury product imagery, campaign stills, and elevated brand worlds.</span>
             </div>
 
             <div class="stat">
               <strong>Motion Focus</strong>
-              <span>Short-form cinematic content for websites, launches, social, and presentations.</span>
+              <span>Short-form cinematic content for modern digital platforms.</span>
             </div>
 
             <div class="stat">
-              <strong>Optional Direction</strong>
-              <span>AI influencer concepts available as a selective strategic add-on.</span>
+              <strong>Flexible Scope</strong>
+              <span>Built for product brands, service brands, launches, hospitality, lifestyle, fashion, and cultural projects.</span>
             </div>
           </div>
         </div>
 
         <div class="hero-visual-shell">
           <div class="hero-visual">
-            <img src="assets/hero.jpg" alt="Avenquell Studio luxury AI visual" />
+            <img src="assets/hero.jpg" alt="Luxury campaign visual by Avenquell Studio" />
           </div>
         </div>
       </div>
@@ -869,7 +918,7 @@
             <span class="step-number">04 — Delivery</span>
             <h3>Refined Final Assets</h3>
             <p>
-              Final materials are polished for campaigns, launches, websites, digital platforms, and presentations.
+              Final materials are polished for launches, campaigns, digital platforms, and brand consistency.
             </p>
           </div>
         </div>
@@ -918,7 +967,7 @@
   <script>
     const menuButton = document.getElementById('menuButton');
     const navMenu = document.getElementById('navMenu');
-    const navLinks = navMenu.querySelectorAll('a');
+    const mobileLinks = navMenu.querySelectorAll('a');
 
     function closeMenu() {
       navMenu.classList.remove('open');
@@ -933,31 +982,33 @@
     }
 
     menuButton.addEventListener('click', function () {
-      const isOpen = navMenu.classList.contains('open');
-      if (isOpen) {
+      if (navMenu.classList.contains('open')) {
         closeMenu();
       } else {
         openMenu();
       }
     });
 
-    navLinks.forEach(function (link) {
+    mobileLinks.forEach(function (link) {
       link.addEventListener('click', function () {
         closeMenu();
       });
     });
 
     document.addEventListener('click', function (event) {
-      const clickedInsideMenu = navMenu.contains(event.target);
-      const clickedButton = menuButton.contains(event.target);
-
-      if (!clickedInsideMenu && !clickedButton) {
+      if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
         closeMenu();
       }
     });
 
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 860) {
         closeMenu();
       }
     });
