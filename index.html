@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avenquell Studio</title>
-  <meta name="description" content="Avenquell Studio is a luxury visual and AI content studio for modern skincare and beauty brands." />
+  <meta
+    name="description"
+    content="Avenquell Studio is a luxury visual and AI content studio for modern skincare and beauty brands."
+  />
   <style>
     :root {
       --bg: #090909;
       --bg-soft: #111111;
       --panel: rgba(255,255,255,0.03);
-      --panel-strong: rgba(255,255,255,0.05);
       --ivory: #f4efe7;
       --ivory-deep: #e7dfd2;
       --gold: #c8a46a;
@@ -24,13 +26,21 @@
       --max: 1440px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Inter, Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top right, rgba(200,164,106,.12), transparent 22%),
-        radial-gradient(circle at 10% 20%, rgba(255,255,255,.03), transparent 18%),
+        radial-gradient(circle at top right, rgba(200,164,106,.10), transparent 22%),
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,.025), transparent 18%),
         linear-gradient(180deg, #080808 0%, #0b0b0b 100%);
       color: var(--ivory);
       line-height: 1.55;
@@ -38,15 +48,26 @@
       text-rendering: optimizeLegibility;
     }
 
-    img, video { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .container {
       width: min(var(--max), calc(100% - 64px));
       margin: 0 auto;
     }
 
-    .section { padding: 104px 0; }
+    .section {
+      padding: 104px 0;
+    }
+
     .eyebrow {
       display: inline-block;
       margin-bottom: 18px;
@@ -56,15 +77,20 @@
       font-size: 12px;
     }
 
-    h1, h2, h3, .brand-title {
-      font-family: Georgia, 'Times New Roman', serif;
+    h1,
+    h2,
+    h3,
+    .brand-title {
+      font-family: Georgia, "Times New Roman", serif;
       font-weight: 600;
       letter-spacing: -0.03em;
     }
 
     h1 {
-      font-size: clamp(42px, 5.5vw, 82px);
-      line-height: .95;
+      font-size: clamp(34px, 3.8vw, 58px);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      max-width: 520px;
     }
 
     h2 {
@@ -74,8 +100,8 @@
     }
 
     h3 {
-      font-size: 26px;
-      line-height: 1.08;
+      font-size: 24px;
+      line-height: 1.1;
       margin-bottom: 14px;
     }
 
@@ -85,23 +111,23 @@
     }
 
     .lead {
-      font-size: 24px;
-      line-height: 1.45;
+      font-size: 20px;
+      line-height: 1.5;
       color: var(--ivory-deep);
-      max-width: 720px;
+      max-width: 620px;
     }
 
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(9,9,9,.72);
+      background: rgba(9,9,9,.78);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,.05);
     }
 
     .nav {
-      min-height: 92px;
+      min-height: 88px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -111,25 +137,29 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       min-width: 0;
     }
 
     .brand-mark {
-      width: 58px;
-      height: 58px;
+      width: 46px;
+      height: 46px;
       object-fit: contain;
-      border-radius: 14px;
+      border-radius: 12px;
       background: rgba(255,255,255,.02);
-      border: 1px solid rgba(255,255,255,.06);
-      padding: 6px;
+      border: 1px solid rgba(255,255,255,.05);
+      padding: 4px;
+      flex-shrink: 0;
     }
 
-    .brand-copy { min-width: 0; }
+    .brand-copy {
+      min-width: 0;
+    }
+
     .brand-title {
       display: block;
-      font-size: 15px;
-      letter-spacing: .12em;
+      font-size: 13px;
+      letter-spacing: .14em;
       text-transform: uppercase;
       color: var(--ivory);
       white-space: nowrap;
@@ -138,7 +168,7 @@
     .brand-subtitle {
       display: block;
       margin-top: 4px;
-      font-size: 11px;
+      font-size: 10px;
       letter-spacing: .18em;
       text-transform: uppercase;
       color: var(--muted-2);
@@ -147,25 +177,27 @@
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 26px;
       flex-wrap: wrap;
       justify-content: flex-end;
     }
 
     .nav-links a {
-      font-size: 13px;
-      letter-spacing: .12em;
+      font-size: 12px;
+      letter-spacing: .14em;
       text-transform: uppercase;
       color: var(--ivory-deep);
       transition: color .25s ease;
     }
 
-    .nav-links a:hover { color: var(--gold-soft); }
+    .nav-links a:hover {
+      color: var(--gold-soft);
+    }
 
     .hero {
       position: relative;
       overflow: hidden;
-      padding: 72px 0 110px;
+      padding: 64px 0 100px;
     }
 
     .hero::before {
@@ -173,47 +205,54 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 70% 25%, rgba(200,164,106,.14), transparent 24%),
-        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
+        radial-gradient(circle at 70% 25%, rgba(200,164,106,.11), transparent 22%),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
       background-size: auto, 72px 72px, 72px 72px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,.6), transparent 85%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.55), transparent 85%);
       pointer-events: none;
-      opacity: .23;
+      opacity: .18;
     }
 
     .hero-grid {
       position: relative;
       display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 72px;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 56px;
       align-items: center;
     }
 
-    .hero-copy { padding-top: 28px; }
-    .hero-copy .lead { margin-top: 30px; }
-    .hero-copy .subcopy {
+    .hero-copy {
+      padding-top: 10px;
+    }
+
+    .hero-copy .lead {
       margin-top: 26px;
-      max-width: 640px;
-      font-size: 19px;
-      line-height: 1.7;
+    }
+
+    .hero-copy .subcopy {
+      margin-top: 22px;
+      max-width: 560px;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--muted);
     }
 
     .hero-actions {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
-      margin-top: 38px;
+      margin-top: 34px;
     }
 
     .btn {
-      min-height: 54px;
+      min-height: 52px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0 24px;
+      padding: 0 22px;
       border-radius: 999px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: .14em;
       text-transform: uppercase;
@@ -224,13 +263,15 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
       color: #111;
-      box-shadow: 0 10px 30px rgba(200,164,106,.16);
+      box-shadow: 0 10px 30px rgba(200,164,106,.14);
     }
 
-    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+    }
 
     .btn-secondary {
-      border-color: rgba(255,255,255,.14);
+      border-color: rgba(255,255,255,.12);
       color: var(--ivory);
       background: rgba(255,255,255,.01);
     }
@@ -242,10 +283,10 @@
 
     .hero-visual-shell {
       position: relative;
-      padding: 22px;
-      border-radius: 36px;
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.08);
+      padding: 18px;
+      border-radius: 34px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.07);
       box-shadow: var(--shadow);
     }
 
@@ -253,9 +294,14 @@
       content: "";
       position: absolute;
       inset: -1px;
-      border-radius: 36px;
+      border-radius: 34px;
       padding: 1px;
-      background: linear-gradient(135deg, rgba(216,185,127,.35), rgba(255,255,255,.06), rgba(216,185,127,.12));
+      background: linear-gradient(
+        135deg,
+        rgba(216,185,127,.28),
+        rgba(255,255,255,.05),
+        rgba(216,185,127,.10)
+      );
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
@@ -264,8 +310,8 @@
 
     .hero-visual {
       overflow: hidden;
-      border-radius: 26px;
-      min-height: 700px;
+      border-radius: 24px;
+      min-height: 640px;
       background: #0f0f0f;
     }
 
@@ -278,21 +324,21 @@
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 42px;
-      max-width: 760px;
+      gap: 14px;
+      margin-top: 38px;
+      max-width: 720px;
     }
 
     .stat {
-      padding: 18px 18px 16px;
-      border: 1px solid rgba(255,255,255,.08);
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,.07);
       border-radius: 18px;
       background: rgba(255,255,255,.02);
     }
 
     .stat strong {
       display: block;
-      font-size: 12px;
+      font-size: 11px;
       letter-spacing: .18em;
       text-transform: uppercase;
       color: var(--gold-soft);
@@ -300,9 +346,9 @@
     }
 
     .stat span {
-      font-size: 16px;
+      font-size: 15px;
       color: var(--ivory-deep);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .split {
@@ -313,7 +359,7 @@
     }
 
     .panel {
-      padding: 40px;
+      padding: 38px;
       border-radius: var(--radius-xl);
       background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
       border: 1px solid rgba(255,255,255,.08);
@@ -323,32 +369,35 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 26px;
-      margin-top: 38px;
+      gap: 24px;
+      margin-top: 36px;
     }
 
     .card {
-      padding: 32px;
-      min-height: 240px;
+      padding: 30px;
+      min-height: 220px;
       border-radius: 24px;
       background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
       border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
     }
 
-    .card p { font-size: 17px; line-height: 1.72; }
+    .card p {
+      font-size: 17px;
+      line-height: 1.72;
+    }
 
     .motion-layout {
       display: grid;
       grid-template-columns: 1.05fr .95fr;
-      gap: 32px;
+      gap: 28px;
       align-items: start;
-      margin-top: 40px;
+      margin-top: 38px;
     }
 
     .video-wrap,
     .mood-tile {
-      border-radius: 26px;
+      border-radius: 24px;
       overflow: hidden;
       border: 1px solid rgba(255,255,255,.08);
       background: #0e0e0e;
@@ -357,7 +406,7 @@
 
     .video-wrap video {
       width: 100%;
-      aspect-ratio: 16/10;
+      aspect-ratio: 16 / 10;
       object-fit: cover;
       background: #000;
     }
@@ -365,7 +414,7 @@
     .moodboard-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+      gap: 16px;
     }
 
     .mood-tile img {
@@ -377,12 +426,12 @@
     .process-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 38px;
+      gap: 20px;
+      margin-top: 36px;
     }
 
     .process-step {
-      padding: 28px;
+      padding: 26px;
       border-radius: 22px;
       border: 1px solid rgba(255,255,255,.08);
       background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
@@ -391,7 +440,7 @@
     .step-number {
       display: inline-block;
       margin-bottom: 16px;
-      font-size: 12px;
+      font-size: 11px;
       letter-spacing: .18em;
       text-transform: uppercase;
       color: var(--gold-soft);
@@ -412,18 +461,18 @@
     }
 
     .contact-box {
-      padding: 88px 36px;
+      padding: 82px 36px;
       text-align: center;
-      border-radius: 36px;
+      border-radius: 34px;
       background:
-        radial-gradient(circle at top center, rgba(200,164,106,.14), transparent 28%),
+        radial-gradient(circle at top center, rgba(200,164,106,.13), transparent 28%),
         linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
     }
 
     .contact-box p {
-      max-width: 780px;
+      max-width: 760px;
       margin: 18px auto 0;
     }
 
@@ -431,9 +480,9 @@
       display: inline-block;
       margin-top: 28px;
       color: var(--gold-soft);
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: clamp(24px, 3vw, 38px);
-      letter-spacing: -.02em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(24px, 3vw, 36px);
+      letter-spacing: -0.02em;
       word-break: break-word;
     }
 
@@ -449,27 +498,76 @@
     @media (max-width: 1180px) {
       .hero-grid,
       .split,
-      .motion-layout { grid-template-columns: 1fr; }
-      .hero-visual { min-height: 540px; }
-      .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .motion-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 520px;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 860px) {
-      .container { width: min(calc(100% - 28px), var(--max)); }
-      .nav { align-items: flex-start; flex-direction: column; padding: 18px 0; }
-      .nav-links { gap: 14px 18px; }
-      .section { padding: 72px 0; }
+      .container {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .nav-links {
+        gap: 14px 18px;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
       .cards,
       .process-grid,
       .moodboard-grid,
-      .hero-stats { grid-template-columns: 1fr; }
-      .hero { padding: 36px 0 72px; }
-      .panel, .card, .process-step, .contact-box { padding: 26px; }
-      .hero-visual-shell { padding: 14px; }
-      .hero-visual { min-height: 400px; }
-      .brand-title, .brand-subtitle { white-space: normal; }
-      .lead { font-size: 20px; }
-      p { font-size: 17px; }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 36px 0 72px;
+      }
+
+      .panel,
+      .card,
+      .process-step,
+      .contact-box {
+        padding: 26px;
+      }
+
+      .hero-visual-shell {
+        padding: 14px;
+      }
+
+      .hero-visual {
+        min-height: 400px;
+      }
+
+      .brand-title,
+      .brand-subtitle {
+        white-space: normal;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -500,12 +598,14 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Luxury Visual & AI Content Studio</span>
-          <h1>Avenquell Studio</h1>
+          <h1>Avenquell<br>Studio</h1>
+
           <p class="lead">
-            Cinematic visuals, refined brand atmospheres, and elevated digital storytelling for modern skincare and beauty brands.
+            Cinematic visuals and refined digital storytelling for modern skincare and beauty brands.
           </p>
+
           <p class="subcopy">
-            We shape premium perception through editorial aesthetics, motion-led creative, and thoughtfully directed AI-enhanced production.
+            We create elevated brand worlds through editorial aesthetics, motion-led creative, and thoughtfully directed AI-enhanced production.
           </p>
 
           <div class="hero-actions">
@@ -518,10 +618,12 @@
               <strong>Visual Focus</strong>
               <span>Luxury product imagery, campaign stills, and elevated brand worlds.</span>
             </div>
+
             <div class="stat">
               <strong>Motion Focus</strong>
-              <span>Short-form cinematic content designed for modern digital platforms.</span>
+              <span>Short-form cinematic content for modern digital platforms.</span>
             </div>
+
             <div class="stat">
               <strong>Optional Direction</strong>
               <span>AI influencer concepts available as a selective strategic add-on.</span>
@@ -543,6 +645,7 @@
           <span class="eyebrow">About</span>
           <h2>A New Era of Beauty Storytelling</h2>
         </div>
+
         <div class="panel">
           <p>
             The skincare industry has entered a new visual era. Brands no longer compete only through formulas or packaging — they compete through perception.
@@ -559,24 +662,37 @@
       <div class="container">
         <span class="eyebrow">What We Create</span>
         <h2>Creative Production for Premium Beauty Brands</h2>
-        <p class="lead">We build visual ecosystems — not disconnected content pieces.</p>
+        <p class="lead">
+          We build visual ecosystems — not disconnected content pieces.
+        </p>
 
         <div class="cards">
           <article class="card">
             <h3>Cinematic Product Visuals</h3>
-            <p>Luxury product imagery designed to deepen desirability and elevate premium market perception.</p>
+            <p>
+              Luxury product imagery designed to deepen desirability and elevate premium market perception.
+            </p>
           </article>
+
           <article class="card">
             <h3>Editorial Skincare Photography</h3>
-            <p>High-end campaign imagery inspired by luxury beauty editorials and modern digital-first brand culture.</p>
+            <p>
+              High-end campaign imagery inspired by luxury beauty editorials and modern digital-first brand culture.
+            </p>
           </article>
+
           <article class="card">
             <h3>Campaign Visual Concepts</h3>
-            <p>Creative direction for launches, founder narratives, seasonal campaigns, and long-term visual positioning.</p>
+            <p>
+              Creative direction for launches, founder narratives, seasonal campaigns, and long-term visual positioning.
+            </p>
           </article>
+
           <article class="card">
             <h3>Short-Form Motion</h3>
-            <p>Motion-led storytelling with a strong visual emphasis, built for premium social, paid, and launch moments.</p>
+            <p>
+              Motion-led storytelling with a strong visual emphasis, built for premium social, paid, and launch moments.
+            </p>
           </article>
         </div>
       </div>
@@ -586,7 +702,9 @@
       <div class="container">
         <span class="eyebrow">Motion & Moodboard</span>
         <h2>Visual Direction That Feels Editorial</h2>
-        <p class="lead">Replace these placeholders with your showreel and curated references: skincare, textures, interiors, campaign stills, and mood imagery.</p>
+        <p class="lead">
+          Replace these placeholders with your showreel and curated references: skincare, textures, interiors, campaign stills, and mood imagery.
+        </p>
 
         <div class="motion-layout">
           <div class="video-wrap">
@@ -597,10 +715,18 @@
           </div>
 
           <div class="moodboard-grid">
-            <div class="mood-tile"><img src="assets/mood-1.jpg" alt="Moodboard visual 1" /></div>
-            <div class="mood-tile"><img src="assets/mood-2.jpg" alt="Moodboard visual 2" /></div>
-            <div class="mood-tile"><img src="assets/mood-3.jpg" alt="Moodboard visual 3" /></div>
-            <div class="mood-tile"><img src="assets/mood-4.jpg" alt="Moodboard visual 4" /></div>
+            <div class="mood-tile">
+              <img src="assets/mood-1.jpg" alt="Moodboard visual 1" />
+            </div>
+            <div class="mood-tile">
+              <img src="assets/mood-2.jpg" alt="Moodboard visual 2" />
+            </div>
+            <div class="mood-tile">
+              <img src="assets/mood-3.jpg" alt="Moodboard visual 3" />
+            </div>
+            <div class="mood-tile">
+              <img src="assets/mood-4.jpg" alt="Moodboard visual 4" />
+            </div>
           </div>
         </div>
       </div>
@@ -610,28 +736,41 @@
       <div class="container">
         <span class="eyebrow">Process</span>
         <h2>A Structured Boutique Approach</h2>
-        <p class="lead">A streamlined workflow designed for premium brands that value clarity, aesthetics, and long-term visual consistency.</p>
+        <p class="lead">
+          A streamlined workflow designed for premium brands that value clarity, aesthetics, and long-term visual consistency.
+        </p>
 
         <div class="process-grid">
           <div class="process-step">
             <span class="step-number">01 — Brand Immersion</span>
             <h3>Understanding the Brand</h3>
-            <p>We study the product, philosophy, audience, and desired positioning before defining visual direction.</p>
+            <p>
+              We study the product, philosophy, audience, and desired positioning before defining visual direction.
+            </p>
           </div>
+
           <div class="process-step">
             <span class="step-number">02 — Creative Direction</span>
             <h3>Concept Development</h3>
-            <p>We shape the mood, styling references, narrative, and composition language for the work.</p>
+            <p>
+              We shape the mood, styling references, narrative, and composition language for the work.
+            </p>
           </div>
+
           <div class="process-step">
             <span class="step-number">03 — Production</span>
             <h3>Visual & Motion Creation</h3>
-            <p>Photography, motion, and AI-assisted production are developed with a premium editorial lens.</p>
+            <p>
+              Photography, motion, and AI-assisted production are developed with a premium editorial lens.
+            </p>
           </div>
+
           <div class="process-step">
             <span class="step-number">04 — Delivery</span>
             <h3>Refined Final Assets</h3>
-            <p>Final materials are polished for launches, campaigns, digital platforms, and brand consistency.</p>
+            <p>
+              Final materials are polished for launches, campaigns, digital platforms, and brand consistency.
+            </p>
           </div>
         </div>
       </div>
@@ -643,6 +782,7 @@
           <span class="eyebrow">Why Avenquell</span>
           <h2>Luxury Sensibility Meets Modern AI Creative</h2>
         </div>
+
         <div class="panel">
           <div class="why-list">
             <div class="why-item">Editorial aesthetics with a boutique, premium-first point of view.</div>
@@ -663,7 +803,9 @@
           <p>
             We welcome collaborations with skincare and beauty brands seeking elevated visual storytelling, cinematic content, and long-term creative partnership.
           </p>
-          <a class="contact-email" href="mailto:avenquellstudio@gmail.com">avenquellstudio@gmail.com</a>
+          <a class="contact-email" href="mailto:avenquellstudio@gmail.com">
+            avenquellstudio@gmail.com
+          </a>
         </div>
       </div>
     </section>
