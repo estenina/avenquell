@@ -662,7 +662,20 @@
       .container {
         width: min(calc(100% - 28px), var(--max));
       }
+        .eyebrow {
+    font-size: 11px;
+    letter-spacing: .14em;
+    margin-bottom: 14px;
+  }
 
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+      .brand-subtitle {
+    font-size: 9px;
+    letter-spacing: .14em;
+  }
       .nav {
         min-height: 78px;
         padding: 12px 0;
@@ -704,7 +717,7 @@
       }
 
       .hero-visual-shell {
-        padding: 14px;
+        margin-top: 10px;
       }
 
       .hero-visual {
@@ -723,14 +736,21 @@
       p {
         font-size: 17px;
       }
+      .hero-actions {
+    margin-top: 28px;
+  }
+
+  .menu-button {
+    padding: 11px 15px;
+  }
     }
  @media (min-width: 1024px) {
   .hero {
     padding: 24px 0 56px;
   }
 
-  .hero-grid {
-    align-items: center;
+   .hero-grid {
+    gap: 46px;
   }
  .hero-visual {
     min-height: auto;
@@ -764,6 +784,14 @@
 
   .hero-actions {
     margin-top: 28px;
+  }
+    .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-secondary {
+    border-color: rgba(255,255,255,.16);
   }
 }
   </style>
