@@ -370,15 +370,17 @@
     }
 
     .hero-copy {
-      padding-top: 0px;
+      padding-top: 0;
     }
-    .hero-copy .eyebrow{
-  margin-bottom:22px;
-}
 
-.hero-copy h1{
-  margin-bottom:18px;
-}
+    .hero-copy .eyebrow {
+      margin-bottom: 22px;
+    }
+
+    .hero-copy h1 {
+      margin-bottom: 18px;
+    }
+
     .hero-copy .lead {
       margin-top: 26px;
     }
@@ -668,20 +670,23 @@
       .container {
         width: min(calc(100% - 28px), var(--max));
       }
-        .eyebrow {
-    font-size: 11px;
-    letter-spacing: .14em;
-    margin-bottom: 14px;
-  }
 
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-  }
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: .14em;
+        margin-bottom: 14px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
+
       .brand-subtitle {
-    font-size: 9px;
-    letter-spacing: .14em;
-  }
+        font-size: 9px;
+        letter-spacing: .14em;
+      }
+
       .nav {
         min-height: 78px;
         padding: 12px 0;
@@ -725,16 +730,18 @@
       .hero-visual-shell {
         margin-top: 10px;
       }
-      .hero-visual img {
-    width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center center;
-  }
 
       .hero-visual {
-       min-height: auto;
-    aspect-ratio: 16 / 10;
+        min-height: auto;
+        aspect-ratio: 16 / 10;
+        background: #0f0f0f;
+      }
+
+      .hero-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
       }
 
       .brand-title,
@@ -749,65 +756,107 @@
       p {
         font-size: 17px;
       }
+
       .hero-actions {
-    margin-top: 28px;
-  }
+        margin-top: 28px;
+      }
 
-  .menu-button {
-    padding: 11px 15px;
-  }
+      .menu-button {
+        padding: 11px 15px;
+      }
+
+      #about.section {
+        padding: 64px 0;
+      }
+
+      #about .panel {
+        padding: 24px;
+        border-radius: 26px;
+      }
+
+      #about .panel p {
+        font-size: 16px;
+        line-height: 1.75;
+      }
     }
- @media (min-width: 1024px) {
-  .hero {
-    padding-top:6px;
-  padding-bottom:60px;
-  }
 
-   .hero-grid {
-    gap: 46px;
-  }
- .hero-visual {
-    min-height: auto;
-    aspect-ratio: 16 / 10;
-  }
-  .hero-copy {
-    padding-top: 0;
-  }
+    @media (min-width: 1024px) {
+      .hero {
+        padding-top: 6px;
+        padding-bottom: 60px;
+      }
 
-  .hero-copy .eyebrow {
-    margin-bottom:22px;
-  }
+      .hero-grid {
+        gap: 46px;
+      }
 
-  .hero-copy h1 {
-    margin-top: 0;
-    margin-bottom: 18px;
-    line-height: 0.94;
-  }
+      .hero-visual {
+        min-height: auto;
+        aspect-ratio: 16 / 10;
+      }
 
-  .hero-copy .lead {
-    margin-top: 0;
-    margin-bottom: 18px;
-    max-width: 540px;
-  }
+      .hero-copy {
+        padding-top: 0;
+      }
 
-  .hero-copy .subcopy {
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 520px;
-  }
+      .hero-copy .eyebrow {
+        margin-bottom: 22px;
+      }
 
-  .hero-actions {
-    margin-top: 28px;
-  }
-    .brand-mark {
-    width: 48px;
-    height: 48px;
-  }
+      .hero-copy h1 {
+        margin-top: 0;
+        margin-bottom: 18px;
+        line-height: 0.94;
+      }
 
-  .btn-secondary {
-    border-color: rgba(255,255,255,.16);
-  }
-}
+      .hero-copy .lead {
+        margin-top: 0;
+        margin-bottom: 18px;
+        max-width: 540px;
+      }
+
+      .hero-copy .subcopy {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 520px;
+      }
+
+      .hero-actions {
+        margin-top: 28px;
+      }
+
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+      }
+
+      .btn-secondary {
+        border-color: rgba(255,255,255,.16);
+      }
+
+      #about.section {
+        padding: 84px 0 92px;
+      }
+
+      #about .split {
+        gap: 48px;
+        align-items: start;
+      }
+
+      #about h2 {
+        max-width: 420px;
+      }
+
+      #about .panel {
+        max-width: 560px;
+        padding: 34px;
+      }
+
+      #about .panel p {
+        font-size: 17px;
+        line-height: 1.72;
+      }
+    }
   </style>
 </head>
 <body>
@@ -895,16 +944,16 @@
       <div class="container split">
         <div>
           <span class="eyebrow">About</span>
-          <h2>A New Era of Brand Storytelling</h2>
+          <h2>Where Brand Storytelling Becomes Visual Identity</h2>
         </div>
 
         <div class="panel">
           <p>
-            Modern brands no longer compete only through product, packaging, or service — they compete through perception, clarity, and visual distinction.
+            Modern brands no longer compete through product or service alone — they compete through perception, clarity, and visual distinction.
           </p>
           <br />
           <p>
-            Today’s audiences respond to cinematic imagery, elevated storytelling, strong brand atmosphere, and emotional resonance. Avenquell Studio helps brands translate ideas into premium visual identity across campaigns, launches, websites, social content, and digital experiences.
+            Today’s audiences respond to cinematic imagery, elevated storytelling, and emotional resonance. Avenquell Studio helps brands transform ideas into premium visual identity across campaigns, launches, websites, social content, and digital experiences.
           </p>
         </div>
       </div>
