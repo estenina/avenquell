@@ -11,7 +11,7 @@
   />
   <meta
     name="keywords"
-    content="Avenquell Studio, AI visual studio, luxury AI content, cinematic brand visuals, AI creative studio, brand storytelling, digital campaigns"
+    content="Avenquell Studio, AI visual studio, luxury AI content, cinematic brand visuals, AI creative studio, brand storytelling, digital campaigns, AI avatar creator"
   />
   <meta name="author" content="Avenquell Studio" />
   <meta name="robots" content="index, follow" />
@@ -528,6 +528,18 @@
       margin-top: 36px;
     }
 
+    .cards.cards-five {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .cards.cards-five .card {
+      grid-column: span 3;
+    }
+
+    .cards.cards-five .card:nth-child(5) {
+      grid-column: 2 / span 4;
+    }
+
     .card {
       padding: 30px;
       min-height: 220px;
@@ -664,207 +676,231 @@
       .process-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .cards.cards-five {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .cards.cards-five .card,
+      .cards.cards-five .card:nth-child(5) {
+        grid-column: auto;
+      }
     }
 
-   @media (max-width: 860px) {
-  .container {
-    width: min(calc(100% - 28px), var(--max));
-  }
+    @media (max-width: 860px) {
+      .container {
+        width: min(calc(100% - 28px), var(--max));
+      }
 
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: .14em;
-    margin-bottom: 10px;
-  }
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: .14em;
+        margin-bottom: 10px;
+      }
 
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-  }
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
 
-  .brand-subtitle {
-    font-size: 9px;
-    letter-spacing: .14em;
-  }
+      .brand-subtitle {
+        font-size: 9px;
+        letter-spacing: .14em;
+      }
 
-  .nav {
-    min-height: 78px;
-    padding: 12px 0;
-  }
+      .nav {
+        min-height: 78px;
+        padding: 12px 0;
+      }
 
-  .nav-links-desktop {
-    display: none;
-  }
+      .nav-links-desktop {
+        display: none;
+      }
 
-  .mobile-menu-wrap {
-    display: block;
-  }
+      .mobile-menu-wrap {
+        display: block;
+      }
 
-  .nav-menu {
-    width: min(300px, calc(100vw - 28px));
-    right: 0;
-  }
+      .nav-menu {
+        width: min(300px, calc(100vw - 28px));
+        right: 0;
+      }
 
-  .section {
-    padding: 40px 0;
-  }
+      .section {
+        padding: 40px 0;
+      }
 
-  .hero {
-    padding: 36px 0 24px;
-  }
+      .hero {
+        padding: 36px 0 24px;
+      }
 
-  .cards,
-  .process-grid,
-  .moodboard-grid,
-  .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+      .cards,
+      .process-grid,
+      .moodboard-grid,
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
 
-  .panel,
-  .card,
-  .process-step,
-  .contact-box {
-    padding: 22px;
-    border-radius: 24px;
-  }
+      .cards.cards-five {
+        grid-template-columns: 1fr;
+      }
 
-  .hero-visual-shell {
-    margin-top: 10px;
-  }
+      .cards.cards-five .card,
+      .cards.cards-five .card:nth-child(5) {
+        grid-column: auto;
+      }
 
-  .hero-visual {
-    min-height: auto;
-    aspect-ratio: 16 / 10;
-    background: #0f0f0f;
-  }
+      .panel,
+      .card,
+      .process-step,
+      .contact-box {
+        padding: 22px;
+        border-radius: 24px;
+      }
 
-  .hero-visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center center;
-  }
+      .hero-visual-shell {
+        margin-top: 10px;
+      }
 
-  .brand-title,
-  .brand-subtitle {
-    white-space: normal;
-  }
+      .hero-visual {
+        min-height: auto;
+        aspect-ratio: 16 / 10;
+        background: #0f0f0f;
+      }
 
-  .lead {
-    font-size: 18px;
-  }
+      .hero-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+      }
 
-  p {
-    font-size: 17px;
-  }
+      .brand-title,
+      .brand-subtitle {
+        white-space: normal;
+      }
 
-  .hero-actions {
-    margin-top: 28px;
-  }
+      .lead {
+        font-size: 18px;
+      }
 
-  .menu-button {
-    padding: 11px 15px;
-  }
+      p {
+        font-size: 17px;
+      }
 
-  #about.section {
-    padding: 16px 0 40px;
-  }
-#create.section {
-  padding: 40px 0;
-}
+      .hero-actions {
+        margin-top: 28px;
+      }
 
-#create .cards {
-  margin-top: 20px;
-}
-     #motion.section {
-  padding: 40px 0;
-}
+      .menu-button {
+        padding: 11px 15px;
+      }
 
-.motion-layout {
-  margin-top: 18px;
-}
-     #process.section {
-  padding: 40px 0;
-}
+      #about.section {
+        padding: 16px 0 40px;
+      }
 
-.process-grid {
-  margin-top: 20px;
-}
-     #why.section {
-  padding: 40px 0;
-}
+      #create.section {
+        padding: 40px 0;
+      }
 
-#why .why-list {
-  margin-top: 0;
-}
-  #about .eyebrow,
-  #create .eyebrow,
-  #motion .eyebrow,
-  #process .eyebrow,
-  #why .eyebrow,
-  #contact .eyebrow {
-    margin-bottom: 10px;
-  }
+      #create .cards {
+        margin-top: 20px;
+      }
 
-  #about h2,
-  #create h2,
-  #motion h2,
-  #process h2,
-  #why h2,
-  #contact h2 {
-    margin-bottom: 14px;
-  }
+      #motion.section {
+        padding: 40px 0;
+      }
 
-  #about .split,
-  #why .split,
-  .motion-layout {
-    gap: 18px;
-  }
+      .motion-layout {
+        margin-top: 18px;
+      }
 
-  #about .panel,
-  #why .panel {
-    padding: 22px;
-    border-radius: 24px;
-  }
+      #process.section {
+        padding: 40px 0;
+      }
 
-  #about .panel p,
-  #why .panel p,
-  .card p,
-  .process-step p,
-  .contact-box p {
-    font-size: 16px;
-    line-height: 1.7;
-  }
+      .process-grid {
+        margin-top: 20px;
+      }
 
-  #create .lead,
-  #motion .lead,
-  #process .lead {
-    margin-bottom: 22px;
-  }
+      #why.section {
+        padding: 40px 0;
+      }
 
-  .motion-layout {
-    margin-top: 22px;
-  }
+      #why .why-list {
+        margin-top: 0;
+      }
 
-  .video-wrap,
-  .mood-tile {
-    border-radius: 22px;
-  }
+      #about .eyebrow,
+      #create .eyebrow,
+      #motion .eyebrow,
+      #process .eyebrow,
+      #why .eyebrow,
+      #contact .eyebrow {
+        margin-bottom: 10px;
+      }
 
-  .contact-box {
-    padding: 28px 22px;
-  }
+      #about h2,
+      #create h2,
+      #motion h2,
+      #process h2,
+      #why h2,
+      #contact h2 {
+        margin-bottom: 14px;
+      }
 
-  .contact-box p {
-    margin-top: 14px;
-  }
+      #about .split,
+      #why .split,
+      .motion-layout {
+        gap: 18px;
+      }
 
-  .contact-email {
-    margin-top: 20px;
-    font-size: 24px;
-  }
-}
+      #about .panel,
+      #why .panel {
+        padding: 22px;
+        border-radius: 24px;
+      }
+
+      #about .panel p,
+      #why .panel p,
+      .card p,
+      .process-step p,
+      .contact-box p {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      #create .lead,
+      #motion .lead,
+      #process .lead {
+        margin-bottom: 22px;
+      }
+
+      .motion-layout {
+        margin-top: 22px;
+      }
+
+      .video-wrap,
+      .mood-tile {
+        border-radius: 22px;
+      }
+
+      .contact-box {
+        padding: 28px 22px;
+      }
+
+      .contact-box p {
+        margin-top: 14px;
+      }
+
+      .contact-email {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+    }
+
     @media (min-width: 1024px) {
       .hero {
         padding-top: 6px;
@@ -1052,7 +1088,7 @@
           We build visual ecosystems — not disconnected content pieces — so brands can scale with stronger consistency, sharper positioning, and more memorable presence.
         </p>
 
-        <div class="cards">
+        <div class="cards cards-five">
           <article class="card">
             <h3>Cinematic Visual Worlds</h3>
             <p>
@@ -1078,6 +1114,13 @@
             <h3>Short-Form Motion</h3>
             <p>
               Motion-led storytelling with a strong visual emphasis, built for premium social, paid, launch, website, and presentation experiences.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>AI Avatar Creator</h3>
+            <p>
+              Create photorealistic AI avatars for brands, founders, influencers, and digital campaigns — designed to extend visual identity across modern content ecosystems.
             </p>
           </article>
         </div>
