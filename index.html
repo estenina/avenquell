@@ -113,7 +113,31 @@
       width: min(var(--max), calc(100% - 64px));
       margin: 0 auto;
     }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+}
 
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.02);
+  color: white;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c8a46a, #d8b97f);
+  color: #111;
+  font-weight: 600;
+  letter-spacing: .12em;
+}
     .section {
       padding: 104px 0;
     }
@@ -1269,20 +1293,35 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-box">
-          <span class="eyebrow">Contact</span>
-          <h2>Let’s Create Something Exceptional</h2>
-          <p>
-            We welcome collaborations with brands seeking elevated visual storytelling, cinematic content, and long-term creative partnership across industries.
-          </p>
-          <a class="contact-email" href="mailto:studio@avenquell.com">
-            studio@avenquell.com
-          </a>
-        </div>
-      </div>
-    </section>
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-box">
+
+      <span class="eyebrow">Contact</span>
+      <h2>Let’s Create Something Exceptional</h2>
+
+      <p>
+<p>
+  We collaborate with modern brands to create elevated visual content, cinematic storytelling, and distinctive digital presence.
+</p>      
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+
+        <input type="email" name="email" placeholder="Your Email" required />
+
+        <input type="text" name="brand" placeholder="Brand Name" />
+
+        <textarea name="message" placeholder="Tell us about your brand or project..." rows="5" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
   </main>
 
   <footer class="footer">
