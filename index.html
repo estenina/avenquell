@@ -112,6 +112,17 @@
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
+     /* Hide floating cookie button/icon */
+  .silktide-cookie-icon,
+  .silktide-consent-manager-cookie-icon,
+  #silktide-cookie-icon,
+  [class*="cookie-icon"],
+  [id*="cookie-icon"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 #form-success {
   display: none;
   margin-top: 20px;
