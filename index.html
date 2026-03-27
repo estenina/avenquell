@@ -740,7 +740,16 @@
 }
 
 .footer-links {
-  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer-links span {
+  opacity: 0.4;
 }
 
 .footer-links a {
@@ -1385,10 +1394,15 @@
   <div class="container">
     <div>© 2026 Avenquell Studio. All rights reserved.</div>
 
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms & Conditions</a>
-    </div>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <span>•</span>
+  <a href="terms.html">Terms & Conditions</a>
+  <span>•</span>
+  <a href="https://www.linkedin.com/company/avenquell-studio/" target="_blank">
+    LinkedIn
+  </a>
+</div>
   </div>
 </footer>
 
