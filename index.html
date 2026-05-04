@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avenquell Studio — Direction-First Creative Production for Modern Brands</title>
+
+  <!-- COOKIE BANNER -->
+  <link rel="stylesheet" href="/cookie-banner/silktide-consent-manager.css">
+  <script src="/cookie-banner/silktide-consent-manager.js"></script>
+  <script>
+    silktideCookieBannerManager.updateCookieBanner({
+      showBackground: false,
+      position: "bottom-right",
+      cookieIcon: { show: false }
+    });
+  </script>
+
+  <!-- GOOGLE ANALYTICS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EELCSC67F0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EELCSC67F0');
+  </script>
+
+  <meta name="description" content="Avenquell Studio creates brand-controlled creative production systems for launches, campaigns, and monthly content needs — with AI-assisted production, human review, and editorial restraint." />
+  <meta name="keywords" content="premium creative content agency, AI-assisted creative production, monthly creative content system, campaign-ready content, brand-controlled creative production, direction-first creative production, launch creative package, product content system" />
+  <meta name="author" content="Avenquell Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://avenquell.com/" />
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon-black.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-black-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-black-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-black.png">
+
+  <meta property="og:title" content="Avenquell Studio — Direction-First Creative Production" />
+  <meta property="og:description" content="Brand-controlled creative production systems for launches, campaigns, and monthly content needs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://avenquell.com/" />
+  <meta property="og:image" content="https://avenquell.com/assets/avenquell-hero-v2.png" />
+  <meta property="og:site_name" content="Avenquell Studio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Avenquell Studio — Direction-First Creative Production" />
+  <meta name="twitter:description" content="Brand-controlled creative production systems for launches, campaigns, and monthly content needs." />
+  <meta name="twitter:image" content="https://avenquell.com/assets/avenquell-hero-v2.png" />
+  <meta name="theme-color" content="#0b0a08" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Avenquell Studio",
+    "url": "https://avenquell.com/",
+    "logo": "https://avenquell.com/assets/logo.png",
+    "description": "Direction-first creative production for brands that need campaign-ready content.",
+    "sameAs": [
+      "https://www.linkedin.com/company/avenquell-studio/",
+      "https://www.instagram.com/avenquell.studio/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0a08;
+      --bg-soft: #15110d;
+      --panel: rgba(255,255,255,.035);
+      --ivory: #f6efe4;
+      --ivory-deep: #e8ddcc;
+      --taupe: #b7a895;
+      --muted: #a99b89;
+      --gold: #c8a46a;
+      --gold-soft: #dfc38d;
+      --line: rgba(246,239,228,.10);
+      --shadow: 0 30px 80px rgba(0,0,0,.45);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --max: 1240px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(200,164,106,.13), transparent 28%),
+        radial-gradient(circle at 10% 35%, rgba(246,239,228,.06), transparent 20%),
+        linear-gradient(180deg, #0a0907 0%, #0f0c09 52%, #090807 100%);
+      color: var(--ivory);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img, video { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; }
+    button { background: none; border: 0; color: inherit; cursor: pointer; }
+
+    .container { width: min(var(--max), calc(100% - 64px)); margin: 0 auto; }
+    .section { padding: 96px 0; }
+    .eyebrow { display: inline-block; margin-bottom: 16px; color: var(--gold-soft); text-transform: uppercase; letter-spacing: .22em; font-size: 12px; }
+    h1, h2, h3, .brand-title { font-family: Georgia, "Times New Roman", serif; font-weight: 600; letter-spacing: -0.035em; }
+    h1 { font-size: clamp(42px, 5.4vw, 82px); line-height: .92; max-width: 880px; }
+    h2 { font-size: clamp(32px, 3.4vw, 54px); line-height: 1; margin-bottom: 18px; }
+    h3 { font-size: 24px; line-height: 1.08; margin-bottom: 14px; }
+    p { font-size: 17px; color: var(--muted); }
+    .lead { font-size: clamp(18px, 1.8vw, 22px); line-height: 1.55; color: var(--ivory-deep); max-width: 780px; }
+    .small { font-size: 14px; color: var(--muted); }
+
+    .silktide-cookie-icon, .silktide-consent-manager-cookie-icon, #silktide-cookie-icon, [class*="cookie-icon"], [id*="cookie-icon"] {
+      display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+    }
+
+    .site-header { position: sticky; top: 0; z-index: 1000; background: rgba(10,9,7,.84); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; }
+    .brand { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+    .brand-mark { width: 46px; height: 46px; object-fit: contain; border-radius: 12px; background: rgba(255,255,255,.025); border: 1px solid var(--line); padding: 4px; }
+    .brand-title { display: block; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+    .brand-subtitle { display: block; margin-top: 4px; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+    .nav-links-desktop { display: flex; gap: 24px; align-items: center; margin-left: auto; }
+    .nav-links-desktop a { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ivory-deep); transition: color .25s ease; }
+    .nav-links-desktop a:hover { color: var(--gold-soft); }
+    .nav-cta { padding: 13px 18px; border-radius: 999px; background: linear-gradient(135deg, var(--gold), var(--gold-soft)); color: #111; font-weight: 700; }
+
+    .mobile-menu-wrap { display: none; position: relative; margin-left: auto; }
+    .menu-button { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.025); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; }
+    .menu-icon { display: inline-flex; flex-direction: column; gap: 4px; width: 16px; }
+    .menu-icon span { width: 16px; height: 1px; background: currentColor; display: block; transition: transform .28s ease, opacity .28s ease; }
+    .menu-button.active .menu-icon span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+    .menu-button.active .menu-icon span:nth-child(2) { opacity: 0; }
+    .menu-button.active .menu-icon span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+    .nav-menu { position: absolute; top: calc(100% + 12px); right: 0; width: min(330px, calc(100vw - 28px)); padding: 18px; border-radius: 22px; background: rgba(14,12,10,.98); border: 1px solid var(--line); box-shadow: var(--shadow); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-10px); transition: all .25s ease; z-index: 2000; }
+    .nav-menu.open { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+    .nav-links-mobile { display: grid; gap: 6px; }
+    .nav-links-mobile a { display: block; padding: 14px 12px; border-radius: 14px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ivory-deep); }
+
+    .hero { position: relative; overflow: hidden; padding: 70px 0 96px; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(to bottom, rgba(0,0,0,.55), transparent 85%); opacity: .22; pointer-events: none; }
+    .hero-grid { position: relative; display: grid; grid-template-columns: .98fr .82fr; gap: 56px; align-items: center; }
+    .hero-copy .lead { margin-top: 24px; max-width: 720px; }
+    .hero-copy .subcopy { margin-top: 18px; max-width: 660px; font-size: 16px; line-height: 1.75; }
+    .hero-actions, .section-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+    .btn { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; padding: 0 22px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; transition: all .25s ease; border: 1px solid transparent; }
+    .btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-soft)); color: #111; box-shadow: 0 10px 30px rgba(200,164,106,.14); }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-secondary { border-color: rgba(255,255,255,.14); color: var(--ivory); background: rgba(255,255,255,.018); }
+    .btn-secondary:hover { border-color: rgba(200,164,106,.55); color: var(--gold-soft); }
+    .hero-visual-shell { position: relative; padding: 16px; border-radius: 34px; background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .hero-visual { overflow: hidden; border-radius: 24px; aspect-ratio: 4 / 5; background: #111; }
+    .hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .trust-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 32px; max-width: 780px; }
+    .trust-item { padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.025); }
+    .trust-item strong { display: block; color: var(--gold-soft); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 8px; }
+    .trust-item span { color: var(--ivory-deep); font-size: 15px; }
+
+    .split { display: grid; grid-template-columns: .82fr 1.18fr; gap: 58px; align-items: start; }
+    .panel, .card, .offer-card, .process-step, .faq-item { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018)); box-shadow: var(--shadow); }
+    .panel { padding: 38px; border-radius: var(--radius-xl); }
+    .diagram { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 12px; margin-top: 28px; }
+    .diagram span { min-height: 74px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 14px; border-radius: 18px; border: 1px solid var(--line); color: var(--ivory-deep); background: rgba(255,255,255,.025); font-size: 13px; letter-spacing: .07em; text-transform: uppercase; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; margin-top: 34px; }
+    .card { padding: 28px; min-height: 210px; border-radius: 24px; }
+    .card p, .offer-card p, .process-step p, .faq-item p { font-size: 16px; line-height: 1.72; }
+    .highlight-card { border-color: rgba(200,164,106,.35); background: radial-gradient(circle at top right, rgba(200,164,106,.13), transparent 34%), linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); }
+    .price { margin: 20px 0 4px; font-family: Georgia, "Times New Roman", serif; font-size: 34px; color: var(--gold-soft); }
+    .offers { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; margin-top: 34px; }
+    .offer-card { padding: 30px; border-radius: 26px; }
+    .offer-card ul { margin: 18px 0 0 18px; color: var(--muted); }
+    .offer-card li { margin-bottom: 10px; }
+    .flow { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 14px; margin-top: 34px; }
+    .process-step { padding: 24px; border-radius: 22px; }
+    .step-number { display: inline-block; color: var(--gold-soft); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 14px; }
+    .proof-card { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: center; padding: 24px; border-radius: var(--radius-xl); border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018)); box-shadow: var(--shadow); margin-top: 34px; }
+    .proof-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 22px; background: #111; }
+    .disclaimer { display: inline-block; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(200,164,106,.32); color: var(--gold-soft); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
+    .standard-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; margin-top: 28px; }
+    .standard-grid div { padding: 24px; border-radius: 22px; border: 1px solid var(--line); background: rgba(255,255,255,.025); }
+    .why-list { display: grid; gap: 16px; }
+    .why-item { padding: 0 0 16px; border-bottom: 1px solid var(--line); color: var(--ivory-deep); font-size: 18px; line-height: 1.55; }
+    .why-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; margin-top: 34px; }
+    .faq-item { padding: 24px; border-radius: 22px; }
+    .faq-item h3 { font-size: 20px; }
+
+    .contact-box { padding: 62px 38px; border-radius: 34px; background: radial-gradient(circle at top center, rgba(200,164,106,.16), transparent 30%), linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .contact-copy { max-width: 760px; margin-bottom: 28px; }
+    .contact-form { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 28px; }
+    .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 15px 14px; border-radius: 14px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.025); color: var(--ivory); outline: none; }
+    .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(232,221,204,.58); }
+    .contact-form select { color: var(--ivory-deep); }
+    .contact-form option { background: #15110d; color: var(--ivory); }
+    .contact-form textarea, .contact-form .full, .contact-form button { grid-column: 1 / -1; }
+    .contact-form button { margin-top: 8px; min-height: 54px; border-radius: 999px; background: linear-gradient(135deg, var(--gold), var(--gold-soft)); color: #111; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    #form-success { display: none; margin-top: 20px; color: var(--gold-soft); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+
+    .footer { margin-top: 70px; padding: 42px 0; text-align: center; border-top: 1px solid var(--line); }
+    .footer-positioning { max-width: 780px; margin: 0 auto 18px; color: var(--taupe); font-size: 15px; }
+    .footer-links { display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--ivory-deep); opacity: .86; }
+    .footer-links a { margin: 0 8px; }
+    .footer-links a:hover { color: var(--gold-soft); }
+    .copyright { margin-top: 18px; font-size: 12px; color: var(--muted); }
+
+    @media (max-width: 1080px) {
+      .hero-grid, .split, .proof-card { grid-template-columns: 1fr; }
+      .offers, .flow, .standard-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .diagram { grid-template-columns: repeat(3, minmax(0,1fr)); }
+      .hero-visual { aspect-ratio: 16/10; }
+    }
+    @media (max-width: 860px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .section { padding: 54px 0; }
+      .hero { padding: 42px 0 58px; }
+      h1 { font-size: clamp(38px, 12vw, 58px); }
+      p { font-size: 16px; }
+      .nav { min-height: 78px; padding: 12px 0; }
+      .nav-links-desktop { display: none; }
+      .mobile-menu-wrap { display: block; }
+      .brand-mark { width: 42px; height: 42px; }
+      .brand-title, .brand-subtitle { white-space: normal; }
+      .hero-visual { aspect-ratio: 1 / 1; }
+      .trust-strip, .cards, .offers, .flow, .standard-grid, .faq-grid, .contact-form, .diagram { grid-template-columns: 1fr; }
+      .panel, .card, .offer-card, .process-step, .faq-item, .contact-box { padding: 22px; border-radius: 24px; }
+      .proof-card { padding: 18px; border-radius: 24px; }
+      .contact-form textarea, .contact-form .full, .contact-form button { grid-column: auto; }
+      .footer-links span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#hero" class="brand">
+        <img class="brand-mark" src="assets/logo.png" alt="Avenquell Studio logo" />
+        <div class="brand-copy">
+          <span class="brand-title">Avenquell Studio</span>
+          <span class="brand-subtitle">Direction-First Creative Production</span>
+        </div>
+      </a>
+
+      <nav class="nav-links-desktop">
+        <a href="#method">Method</a>
+        <a href="#services-pricing">Services</a>
+        <a href="#work">Work</a>
+        <a href="#services-pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Request the Deck</a>
+      </nav>
+
+      <div class="mobile-menu-wrap">
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu" type="button">
+          <span>Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <nav class="nav-links-mobile">
+            <a href="#method">Method</a>
+            <a href="#services-pricing">Services</a>
+            <a href="#work">Work</a>
+            <a href="#services-pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Request the Deck</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Avenquell Studio</span>
+          <h1>Direction-first creative production for brands that need campaign-ready content.</h1>
+          <p class="lead">We build brand-controlled content systems for launches, campaigns, and monthly creative needs — with AI-assisted production, human review, and editorial restraint.</p>
+          <p class="subcopy">Avenquell is not an AI file vendor, prompt shop, or default SMM agency. We create the creative assets and visual systems your brand can actually use.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Request the Monthly System Deck</a>
+            <a class="btn btn-secondary" href="#contact">Start with a Visual Audit</a>
+          </div>
+          <div class="trust-strip">
+            <div class="trust-item"><strong>From $5K</strong><span>Project starting points</span></div>
+            <div class="trust-item"><strong>From $9.5K/mo</strong><span>Monthly creative systems</span></div>
+            <div class="trust-item"><strong>Human Review</strong><span>No random AI output</span></div>
+          </div>
+        </div>
+        <div class="hero-visual-shell">
+          <div class="hero-visual">
+            <img src="assets/avenquell-hero.png" alt="Premium campaign-ready visual direction by Avenquell Studio" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">What Avenquell Does</span>
+          <h2>Creative production with direction, control, and use-case logic.</h2>
+        </div>
+        <div class="panel">
+          <p>Avenquell Studio builds the creative production layer behind brand-controlled content: direction, production, human review, use-case mapping, and organized delivery.</p>
+          <br />
+          <p>We are not an AI file vendor, a default SMM agency, or an unlimited content subscription. We create the creative assets and visual systems your brand can actually use.</p>
+          <div class="diagram" aria-label="Avenquell production flow">
+            <span>Direction</span><span>Production</span><span>Review</span><span>Use Cases</span><span>Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">The Problem</span>
+          <h2>Modern brands need more than one beautiful visual.</h2>
+        </div>
+        <div class="panel">
+          <p>Launches need assets. Ads need variations. Reels need motion. Carousels need structure. Email and websites need campaign visuals. Founder-led brands need visible authority.</p>
+          <br />
+          <p>The problem is not a lack of ideas. The problem is repeatable creative production — without losing taste, control, or brand consistency.</p>
+          <div class="section-actions"><a class="btn btn-secondary" href="#monthly-system">See the Monthly System</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="monthly-system" class="section">
+      <div class="container">
+        <span class="eyebrow">Flagship Offer</span>
+        <h2>Monthly Creative Content System</h2>
+        <p class="lead">A direction-first monthly production system for brands that need campaign-ready assets, visual consistency, and ongoing content support.</p>
+        <div class="cards">
+          <article class="card highlight-card">
+            <h3>Repeatable creative production</h3>
+            <p>The system gives your brand a recurring creative production layer so you are not rebuilding visual direction from zero every month.</p>
+            <div class="price">From $9.5K/month</div>
+            <p class="small">3-month minimum. Scope depends on cadence, complexity, use cases, and review depth.</p>
+          </article>
+          <article class="card">
+            <h3>Built for real marketing use</h3>
+            <p>Designed for launches, campaigns, product stories, social assets, email, web, and paid creative support.</p>
+            <div class="section-actions"><a class="btn btn-primary" href="#contact">Request the Monthly System Deck</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section">
+      <div class="container">
+        <span class="eyebrow">The Avenquell Method</span>
+        <h2>A direction-first system that turns brand direction into campaign-ready content.</h2>
+        <p class="lead">We do not start with random output. We start with the brand, the use case, and the visual system the assets need to support.</p>
+        <div class="flow">
+          <div class="process-step"><span class="step-number">01</span><h3>Brief Intake</h3><p>We clarify the brand, offer, audience, goals, restrictions, and intended use.</p></div>
+          <div class="process-step"><span class="step-number">02</span><h3>Brand Direction</h3><p>We define mood, references, styling, composition, and commercial purpose.</p></div>
+          <div class="process-step"><span class="step-number">03</span><h3>Visual System Map</h3><p>We map assets to launch, social, web, email, paid, or founder use cases.</p></div>
+          <div class="process-step"><span class="step-number">04</span><h3>Production</h3><p>AI-assisted production is guided by direction, not by random generation.</p></div>
+          <div class="process-step"><span class="step-number">05</span><h3>Human Review</h3><p>We review for taste, brand control, usability, consistency, and accuracy needs.</p></div>
+          <div class="process-step"><span class="step-number">06</span><h3>Delivery</h3><p>Final assets are organized for the approved use cases and delivery structure.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="standard" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">The Avenquell Standard</span>
+          <h2>No random output. No off-brand assets. No AI slop.</h2>
+        </div>
+        <div class="panel">
+          <p>Premium brands do not need more files. They need content that protects the brand, supports the campaign, and feels intentional from the first frame.</p>
+          <br />
+          <p>AI may be part of the production layer. It is not the strategy, the taste, or the final judgment. We do not deliver everything AI can generate. We deliver what your brand can actually use.</p>
+          <div class="standard-grid">
+            <div><h3>Brand Control</h3><p>Assets must support the approved direction and intended use.</p></div>
+            <div><h3>Editorial Restraint</h3><p>The final work should feel premium, not overgenerated or generic.</p></div>
+            <div><h3>Human Review</h3><p>Every output is filtered for taste, accuracy risk, and commercial usability.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-pricing" class="section">
+      <div class="container">
+        <span class="eyebrow">Services & Starting Points</span>
+        <h2>Premium creative production, priced by direction and usable outcomes.</h2>
+        <p class="lead">Projects typically start around $5K. Monthly creative systems usually begin around $9.5K/month, depending on scope.</p>
+        <div class="offers">
+          <article class="offer-card">
+            <h3>Premium Visual Audit</h3>
+            <p>A focused diagnostic for brands that need clarity before a larger production engagement.</p>
+            <ul><li>Brand and visual review</li><li>Opportunity notes</li><li>Recommended next creative path</li></ul>
+          </article>
+          <article class="offer-card highlight-card">
+            <h3>Launch Creative Package</h3>
+            <p>A structured project for launches, product stories, campaign concepts, and seasonal creative needs.</p>
+            <ul><li>Creative direction</li><li>Campaign-ready asset set</li><li>Review and organized delivery</li></ul>
+          </article>
+          <article class="offer-card">
+            <h3>Monthly Creative Content System</h3>
+            <p>The flagship ongoing production system for brands that need recurring visual consistency and asset volume.</p>
+            <ul><li>From $9.5K/month</li><li>3-month minimum</li><li>Launch, social, web, email, and paid support</li></ul>
+          </article>
+        </div>
+        <p class="small" style="margin-top:20px;">Avenquell Studio does not price by number of AI files. We price by creative direction, production complexity, usage needs, product accuracy, review depth, delivery structure, and monthly cadence.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <span class="eyebrow">Concept Studies / Proof</span>
+        <h2>Concept Studies</h2>
+        <p class="lead">Before real client case studies are available, Avenquell Studio uses clearly labeled speculative concept studies to demonstrate method, taste, direction, and use-case mapping.</p>
+        <div class="proof-card">
+          <img src="assets/concept-study-01.jpg" alt="Speculative premium home fragrance launch concept study by Avenquell Studio" />
+          <div>
+            <span class="disclaimer">Speculative Concept Study / Not Client Work</span>
+            <h3>Premium Home Fragrance Launch</h3>
+            <p>A direction-first launch asset system for a premium candle / home fragrance brand. Use this block to show the Concept Study 01 hero image, direction board, asset map, and short-form frames.</p>
+            <div class="section-actions"><a class="btn btn-secondary" href="#contact">Request the Case Study</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <span class="eyebrow">Process</span>
+        <h2>How Projects Run</h2>
+        <p class="lead">A clear process protects the work. Avenquell Studio uses a controlled production flow so the brand, direction, review process, and final delivery stay aligned.</p>
+        <div class="diagram" style="grid-template-columns: repeat(6, minmax(0,1fr));">
+          <span>Brief Intake</span><span>Brand Direction</span><span>Visual System Map</span><span>Production</span><span>Human Review</span><span>Delivery</span>
+        </div>
+        <p class="small" style="margin-top:20px;">A revision refines the approved direction. A change request changes the direction, scope, deliverables, or timeline.</p>
+      </div>
+    </section>
+
+    <section id="product-accuracy" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Product Accuracy / Brand Control</span>
+          <h2>Product Accuracy & Brand Control</h2>
+        </div>
+        <div class="panel">
+          <p>If the product is wrong, the asset is not usable.</p>
+          <br />
+          <p>Before production, Avenquell Studio clarifies whether an asset is a campaign concept, a brand-controlled product visual, or an accuracy-critical product representation.</p>
+          <br />
+          <p>If accuracy matters, stronger references or physical product may be required. Avenquell Studio does not promise perfect product accuracy without proper references.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Why Avenquell Studio</span>
+          <h2>Premium visual direction with a structured production process.</h2>
+        </div>
+        <div class="panel">
+          <div class="why-list">
+            <div class="why-item">Direction before production</div>
+            <div class="why-item">Editorial restraint</div>
+            <div class="why-item">Brand-controlled output</div>
+            <div class="why-item">Human review</div>
+            <div class="why-item">Use-case mapping</div>
+            <div class="why-item">Clear scope and delivery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions premium buyers usually ask first.</h2>
+        <div class="faq-grid">
+          <article class="faq-item"><h3>Is this AI content?</h3><p>AI may be part of the production layer. The offer is direction-first creative production: strategy, direction, production, review, and use-case mapping.</p></article>
+          <article class="faq-item"><h3>Do you manage social media?</h3><p>Avenquell Studio is not a default SMM agency. Posting and full social media management are included only if scoped.</p></article>
+          <article class="faq-item"><h3>How much does it cost?</h3><p>Projects typically start around $5K. The Monthly Creative Content System starts from $9.5K/month with a 3-month minimum.</p></article>
+          <article class="faq-item"><h3>Can you make our exact product?</h3><p>Product accuracy depends on references, product complexity, and intended use. Physical product may be required when accuracy matters.</p></article>
+          <article class="faq-item"><h3>How many revisions are included?</h3><p>Avenquell Studio typically includes 2 rounds of revisions after approved direction, unless the proposal states otherwise.</p></article>
+          <article class="faq-item"><h3>Do we get prompts or raw files?</h3><p>Final delivery includes approved assets in agreed formats. Internal prompts, raw generations, rejected outputs, and tool workflow are not included unless explicitly agreed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <span class="eyebrow">Start the Conversation</span>
+          <h2>Tell us what you are preparing for.</h2>
+          <p class="contact-copy">A launch, monthly content system, product campaign, founder content, or visual audit. Projects typically start around $5K.</p>
+
+          <form class="contact-form" action="https://formspree.io/f/maqpgeyk" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="brand" placeholder="Brand / Company" required />
+            <input type="url" name="website" placeholder="Website" />
+            <input type="text" name="social" placeholder="Instagram / LinkedIn" />
+            <input type="text" name="industry" placeholder="Industry" />
+            <select name="interest" required>
+              <option value="">Interested in...</option>
+              <option>Premium Visual Audit</option>
+              <option>Launch Creative Package</option>
+              <option>Monthly Creative Content System</option>
+              <option>Founder Content System</option>
+              <option>Not sure yet</option>
+            </select>
+            <select name="timeline" required>
+              <option value="">Timeline...</option>
+              <option>ASAP</option>
+              <option>2-4 weeks</option>
+              <option>1-3 months</option>
+              <option>3+ months</option>
+              <option>Not sure</option>
+            </select>
+            <select name="budget" required>
+              <option value="">Estimated budget...</option>
+              <option>Under $5K</option>
+              <option>$5K-$10K</option>
+              <option>$10K-$20K</option>
+              <option>$20K+</option>
+              <option>Not sure</option>
+            </select>
+            <select name="preparing_for" required>
+              <option value="">What are you preparing for?</option>
+              <option>Launch</option>
+              <option>Monthly content</option>
+              <option>Founder content</option>
+              <option>Product campaign</option>
+              <option>Brand refresh</option>
+              <option>Other</option>
+            </select>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <p class="small full">Projects typically start around $5K. Monthly creative systems usually begin around $9.5K/month depending on scope.</p>
+            <button type="submit">Send Inquiry</button>
+          </form>
+          <p id="form-success">Thank you — we’ll be in touch shortly ✨</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-positioning">Avenquell Studio creates direction-first creative production systems for brands that need campaign-ready content they can actually use.</p>
+      <div class="footer-links">
+        <a href="#method">Method</a><span>•</span>
+        <a href="#services-pricing">Services</a><span>•</span>
+        <a href="#work">Work</a><span>•</span>
+        <a href="#services-pricing">Pricing</a><span>•</span>
+        <a href="#contact">Contact</a><span>•</span>
+        <a href="https://www.instagram.com/avenquell.studio/" target="_blank" rel="noopener noreferrer">Instagram</a><span>•</span>
+        <a href="https://www.linkedin.com/company/avenquell-studio/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>•</span>
+        <a href="privacy.html">Privacy</a><span>•</span>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div class="copyright">© 2026 Avenquell Studio. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const navMenu = document.getElementById('navMenu');
+    const mobileLinks = navMenu.querySelectorAll('a');
+
+    function closeMenu() {
+      navMenu.classList.remove('open');
+      menuButton.classList.remove('active');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }
+    function openMenu() {
+      navMenu.classList.add('open');
+      menuButton.classList.add('active');
+      menuButton.setAttribute('aria-expanded', 'true');
+    }
+    menuButton.addEventListener('click', function () {
+      navMenu.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    mobileLinks.forEach(function (link) { link.addEventListener('click', closeMenu); });
+    document.addEventListener('click', function (event) {
+      if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
+    });
+    document.addEventListener('keydown', function (event) { if (event.key === 'Escape') closeMenu(); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 860) closeMenu(); });
+
+    const form = document.querySelector('.contact-form');
+    const success = document.getElementById('form-success');
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      if (response.ok) { form.reset(); success.style.display = 'block'; }
+      else { alert('Something went wrong. Please try again.'); }
+    });
+  </script>
+</body>
+</html>
