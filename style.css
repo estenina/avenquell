@@ -37,7 +37,11 @@
     .section { padding: 96px 0; }
     .eyebrow { display: inline-block; margin-bottom: 16px; color: var(--gold-soft); text-transform: uppercase; letter-spacing: .22em; font-size: 12px; }
     h1, h2, h3, .brand-title { font-family: Georgia, "Times New Roman", serif; font-weight: 600; letter-spacing: -0.035em; }
-    h1 { font-size: clamp(42px, 5.4vw, 82px); line-height: .92; max-width: 880px; }
+   h1 {
+  font-size: clamp(32px, 3.4vw, 54px);
+  line-height: 1;
+  max-width: 880px;
+}
     h2 { font-size: clamp(32px, 3.4vw, 54px); line-height: 1; margin-bottom: 18px; }
     h3 { font-size: 24px; line-height: 1.08; margin-bottom: 14px; }
     p { font-size: 17px; color: var(--muted); }
@@ -147,7 +151,9 @@
       .container { width: min(calc(100% - 28px), var(--max)); }
       .section { padding: 54px 0; }
       .hero { padding: 42px 0 58px; }
-      h1 { font-size: clamp(38px, 12vw, 58px); }
+      h1 {
+  font-size: clamp(32px, 9vw, 48px);
+}
       p { font-size: 16px; }
       .nav { min-height: 78px; padding: 12px 0; }
       .nav-links-desktop { display: none; }
