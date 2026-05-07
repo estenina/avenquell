@@ -131,8 +131,26 @@
     .contact-form select { color: var(--ivory-deep); }
     .contact-form option { background: #15110d; color: var(--ivory); }
     .contact-form textarea, .contact-form .full, .contact-form button { grid-column: 1 / -1; }
-    .contact-form button { margin-top: 8px; min-height: 54px; border-radius: 999px; background: linear-gradient(135deg, var(--gold), var(--gold-soft)); color: #111; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-    #form-success { display: none; margin-top: 20px; color: var(--gold-soft); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+.contact-form button {
+  margin-top: 8px;
+  min-height: 54px;
+  width: 100%;
+  max-width: 460px;
+  justify-self: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+  color: #111;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease, opacity .25s ease;
+} 
+.contact-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(200,164,106,.18);
+}
+#form-success { display: none; margin-top: 20px; color: var(--gold-soft); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
 
     .footer { margin-top: 70px; padding: 42px 0; text-align: center; border-top: 1px solid var(--line); }
     .footer-positioning { max-width: 780px; margin: 0 auto 18px; color: var(--taupe); font-size: 15px; }
