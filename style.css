@@ -252,6 +252,63 @@
   justify-content: center;
   margin-top: 30px;
 }
+.verticals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.vertical-pill {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(200,164,106,.28);
+  background: rgba(255,255,255,.025);
+  color: var(--ivory-deep);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.services-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.services-box {
+  min-height: 220px;
+  padding: 32px;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018));
+  box-shadow: var(--shadow);
+}
+
+.services-label {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--gold-soft);
+  font-size: 12px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.services-box p {
+  max-width: 620px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.2vw, 36px);
+  line-height: 1.18;
+  color: var(--ivory);
+  letter-spacing: -0.025em;
+}
     .why-list { display: grid; gap: 16px; }
     .why-item { padding: 0 0 16px; border-bottom: 1px solid var(--line); color: var(--ivory-deep); font-size: 18px; line-height: 1.55; }
     .why-item:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -302,6 +359,13 @@
       .hero-visual { aspect-ratio: 16/10; }
           .standard-rules-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+          .verticals-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.services-content-grid {
+  grid-template-columns: 1fr;
 }
     }
     @media (max-width: 860px) {
@@ -354,6 +418,21 @@
 }
 
 .method-card {
+  min-height: auto;
+  padding: 22px;
+  border-radius: 24px;
+}
+          .verticals-grid,
+.services-content-grid {
+  grid-template-columns: 1fr;
+}
+
+.vertical-pill {
+  min-height: 72px;
+  border-radius: 22px;
+}
+
+.services-box {
   min-height: auto;
   padding: 22px;
   border-radius: 24px;
