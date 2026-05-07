@@ -157,6 +157,38 @@
   font-size: 16px;
   line-height: 1.72;
 }
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.method-card {
+  min-height: 230px;
+  padding: 30px;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018));
+  box-shadow: var(--shadow);
+}
+
+.method-number {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--gold-soft);
+  font-size: 12px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.method-card h3 {
+  margin-bottom: 14px;
+}
+
+.method-card p {
+  font-size: 16px;
+  line-height: 1.72;
+}
     .why-list { display: grid; gap: 16px; }
     .why-item { padding: 0 0 16px; border-bottom: 1px solid var(--line); color: var(--ivory-deep); font-size: 18px; line-height: 1.55; }
     .why-item:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -225,6 +257,15 @@
 }
 
 .what-card {
+  min-height: auto;
+  padding: 22px;
+  border-radius: 24px;
+}
+          .method-grid {
+  grid-template-columns: 1fr;
+}
+
+.method-card {
   min-height: auto;
   padding: 22px;
   border-radius: 24px;
