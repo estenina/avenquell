@@ -451,7 +451,20 @@
     gap: 12px;
     overflow: visible;
   }
+ .mobile-menu-wrap {
+    position: relative;
+    z-index: 6000;
+    flex-shrink: 0;
+    margin-left: 8px;
+  }
 
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 16px);
+    right: 0;
+    z-index: 7000;
+    width: min(330px, calc(100vw - 32px));
+  }
   .brand {
     min-width: 0;
     gap: 10px;
