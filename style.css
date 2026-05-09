@@ -458,12 +458,24 @@
     margin-left: 8px;
   }
 
-  .nav-menu {
+.nav-menu {
     position: absolute;
-    top: calc(100% + 16px);
+    top: calc(100% + 14px);
     right: 0;
     z-index: 7000;
-    width: min(330px, calc(100vw - 32px));
+    width: min(280px, calc(100vw - 36px));
+    padding: 14px;
+    border-radius: 20px;
+  }
+          .nav-links-mobile {
+    gap: 4px;
+  }
+
+  .nav-links-mobile a {
+    padding: 12px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    letter-spacing: .14em;
   }
   .brand {
     min-width: 0;
