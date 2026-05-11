@@ -275,7 +275,82 @@
   letter-spacing: .16em;
   text-transform: uppercase;
 }
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
 
+.fit-card {
+  min-height: 250px;
+  padding: 26px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018));
+  box-shadow: var(--shadow);
+}
+
+.fit-number {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--gold-soft);
+  font-size: 12px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.fit-card h3 {
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.fit-card p {
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.deliverable-item {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.025);
+  color: var(--ivory-deep);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  line-height: 1.45;
+}
+
+.not-do-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 42px;
+  max-width: 980px;
+}
+
+.not-do-item {
+  padding: 22px 26px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.025);
+  color: var(--ivory-deep);
+  font-size: 18px;
+  line-height: 1.5;
+}
 .services-content-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -467,6 +542,13 @@
 .services-content-grid {
   grid-template-columns: 1fr;
 }
+          .fit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deliverables-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
     }
     @media (max-width: 860px) {
       .container { width: min(calc(100% - 28px), var(--max)); }
@@ -497,6 +579,30 @@
 .process-note {
   margin-top: 22px;
   font-size: 15px;
+}
+          .fit-grid,
+.deliverables-grid {
+  grid-template-columns: 1fr;
+}
+
+.fit-card {
+  min-height: auto;
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.deliverable-item {
+  min-height: auto;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.not-do-item {
+  padding: 18px 20px;
+  border-radius: 18px;
+  font-size: 16px;
 }
   .nav {
     gap: 12px;
