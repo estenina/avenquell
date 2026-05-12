@@ -189,6 +189,75 @@
   font-size: 16px;
   line-height: 1.72;
 }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: 28px;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.038), rgba(255,255,255,.018));
+  box-shadow: var(--shadow);
+}
+
+.pricing-card-featured {
+  border-color: rgba(200,164,106,.42);
+  background:
+    radial-gradient(circle at top right, rgba(200,164,106,.16), transparent 36%),
+    linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.022));
+}
+
+.pricing-label {
+  display: block;
+  min-height: 34px;
+  margin-bottom: 18px;
+  color: var(--gold-soft);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.pricing-card h3 {
+  min-height: 58px;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.pricing-amount {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 2.6vw, 38px);
+  line-height: 1;
+  color: var(--gold-soft);
+  letter-spacing: -0.03em;
+}
+
+.pricing-card p {
+  flex: 1;
+  margin-bottom: 24px;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.pricing-card .btn {
+  width: 100%;
+}
+
+.pricing-note {
+  max-width: 900px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
 .standard-intro {
   margin-top: 14px;
 }
@@ -782,6 +851,9 @@
           .concept-study-feature {
   grid-template-columns: 1fr;
 }
+           .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
 .output-system-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -857,7 +929,20 @@
     flex-shrink: 0;
     margin-left: 8px;
   }
+.pricing-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .pricing-card {
+    min-height: auto;
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .pricing-label,
+  .pricing-card h3 {
+    min-height: auto;
+  }
 .nav-menu {
     position: absolute;
     top: calc(100% + 14px);
