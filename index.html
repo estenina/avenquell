@@ -878,61 +878,101 @@
     </div>
   </div>
 </section>
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-box">
+    <section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-box">
+      <div class="contact-grid">
+        <div class="contact-info">
           <span class="eyebrow">Start the Conversation</span>
           <h2>Tell us what you are preparing for.</h2>
-          <p class="contact-copy">A launch, monthly content system, product campaign, founder content, or visual audit. Projects typically start around $5K.</p>
+          <p class="contact-copy">
+            A launch, monthly content system, product campaign, founder content, or visual audit.
+            Projects typically start around $5,000.
+          </p>
 
-          <form class="contact-form" action="https://formspree.io/f/maqpgeyk" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <input type="text" name="brand" placeholder="Brand / Company" required />
-            <input type="url" name="website" placeholder="Website" />
-            <input type="text" name="social" placeholder="Instagram / LinkedIn" />
-            <input type="text" name="industry" placeholder="Industry" />
-            <select name="interest" required>
-              <option value="">Interested in...</option>
-              <option>Premium Visual Audit</option>
-              <option>Launch Creative Package</option>
-              <option>Monthly Creative Content System</option>
-              <option>Founder Content System</option>
-              <option>Not sure yet</option>
-            </select>
-            <select name="timeline" required>
-              <option value="">Timeline...</option>
-              <option>ASAP</option>
-              <option>2-4 weeks</option>
-              <option>1-3 months</option>
-              <option>3+ months</option>
-              <option>Not sure</option>
-            </select>
-            <select name="budget" required>
-              <option value="">Estimated budget...</option>
-              <option>Under $5K</option>
-              <option>$5K-$10K</option>
-              <option>$10K-$20K</option>
-              <option>$20K+</option>
-              <option>Not sure</option>
-            </select>
-            <select name="preparing_for" required>
-              <option value="">What are you preparing for?</option>
-              <option>Launch</option>
-              <option>Monthly content</option>
-              <option>Founder content</option>
-              <option>Product campaign</option>
-              <option>Brand refresh</option>
-              <option>Other</option>
-            </select>
-            <textarea name="message" placeholder="Message" rows="5" required></textarea>
-            <p class="small full">Projects typically start around $5K. Monthly creative systems usually begin around $9.5K/month depending on scope.</p>
-            <button type="submit">Send Inquiry</button>
-          </form>
-          <p id="form-success">Thank you — we’ll be in touch shortly ✨</p>
+          <div class="next-steps">
+            <h3>What happens next.</h3>
+            <p>
+              After you send the inquiry, we’ll respond within one business day.
+              If we’re a fit, we’ll book a focused discovery call to understand the brand,
+              the campaign, and the creative support you need.
+            </p>
+            <p>
+              No hard sell. No generic pitch. If we are not the right fit, we will tell you clearly.
+            </p>
+          </div>
+
+          <div class="contact-direct">
+            <p><strong>Direct contact:</strong></p>
+            <a href="mailto:studio@avenquell.com">studio@avenquell.com</a>
+            <span>Charleston-based · Available for brands worldwide</span>
+          </div>
+
+          <div class="contact-note">
+            Projects typically start around $5,000. Monthly creative systems begin around
+            $9,500/month depending on scope.
+          </div>
         </div>
+
+        <form class="contact-form" action="https://formspree.io/f/maqpgeyk" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="brand" placeholder="Brand / Company" required />
+          <input type="url" name="website" placeholder="Website" />
+          <input type="text" name="social" placeholder="Instagram / LinkedIn" />
+          <input type="text" name="industry" placeholder="Industry" />
+
+          <select name="interest" required>
+            <option value="">Interested in...</option>
+            <option>Premium Visual Audit</option>
+            <option>Launch Creative Package</option>
+            <option>Monthly Creative Content System</option>
+            <option>Founder Content System</option>
+            <option>Not sure yet</option>
+          </select>
+
+          <select name="timeline" required>
+            <option value="">Timeline...</option>
+            <option>ASAP</option>
+            <option>2-4 weeks</option>
+            <option>1-3 months</option>
+            <option>3+ months</option>
+            <option>Not sure</option>
+          </select>
+
+          <select name="budget" required>
+            <option value="">Estimated budget...</option>
+            <option>Under $5K</option>
+            <option>$5K-$10K</option>
+            <option>$10K-$20K</option>
+            <option>$20K+</option>
+            <option>Not sure</option>
+          </select>
+
+          <select name="preparing_for" required>
+            <option value="">What are you preparing for?</option>
+            <option>Launch</option>
+            <option>Monthly content</option>
+            <option>Founder content</option>
+            <option>Product campaign</option>
+            <option>Brand refresh</option>
+            <option>Other</option>
+          </select>
+
+          <textarea name="message" placeholder="Tell us a bit about what you’re working on." rows="5" required></textarea>
+
+          <p class="small full">
+            Projects typically start around $5K. Monthly creative systems usually begin around $9.5K/month depending on scope.
+          </p>
+
+          <button type="submit">Send Inquiry</button>
+        </form>
       </div>
-    </section>
+
+      <p id="form-success">Thank you — we’ll be in touch shortly ✨</p>
+    </div>
+  </div>
+</section>
   </main>
 
  <footer class="footer">
