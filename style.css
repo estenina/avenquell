@@ -122,8 +122,17 @@
 }
 
 .nav-links-desktop a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
   width: 100%;
-  opacity: 1;
+  height: 1px;
+  background: var(--gold-soft);
+}
+
+.nav-links-desktop a {
+  position: relative;
 }
 
 .section-header {
