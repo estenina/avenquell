@@ -116,6 +116,16 @@
     .disclaimer { display: inline-block; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(200,164,106,.32); color: var(--gold-soft); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
     .standard-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; margin-top: 28px; }
     .standard-grid div { padding: 24px; border-radius: 22px; border: 1px solid var(--line); background: rgba(255,255,255,.025); }
+.nav-links-desktop a.active,
+.nav-links-mobile a.active {
+  color: var(--gold-soft);
+}
+
+.nav-links-desktop a.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
 .section-header {
   max-width: 820px;
   margin-bottom: 42px;
