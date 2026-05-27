@@ -29,6 +29,28 @@
 
   <link rel="canonical" href="https://avenquell.com/method/" />
   <link rel="stylesheet" href="/style.css">
+
+  <style>
+    /* ── GATE BADGE ── */
+    .method-card {
+      position: relative;
+    }
+    .method-card.is-gate {
+      /* inherits your existing .method-card styles */
+    }
+    .gate-badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      border: 1px solid currentColor;
+      padding: 2px 7px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #B8875D;
+    }
+  </style>
 </head>
 
 <body>
@@ -63,7 +85,7 @@
 
         <div class="nav-menu" id="navMenu">
           <nav class="nav-links-mobile">
-             <a href="/">Home</a>
+            <a href="/">Home</a>
             <a href="/method/" class="active">Method</a>
             <a href="/standard/">Standard</a>
             <a href="/services/">Services</a>
@@ -78,6 +100,10 @@
   </header>
 
   <main>
+
+    <!-- ═══════════════════════════
+         METHOD STEPS
+    ════════════════════════════ -->
     <section class="section method-section">
       <div class="container">
         <div class="section-header">
@@ -91,45 +117,52 @@
         </div>
 
         <div class="method-grid">
+
           <article class="method-card">
             <span class="method-number">01</span>
             <h3>Brief Intake</h3>
-            <p>Your brand context becomes our internal brief.</p>
+            <p>Your brand context, goals, product details, and use cases are clarified upfront and documented as our internal brief. This shapes every decision downstream — nothing moves forward without it.</p>
           </article>
 
-          <article class="method-card">
+          <article class="method-card is-gate">
+            <span class="gate-badge">Approval Gate</span>
             <span class="method-number">02</span>
             <h3>Brand Direction</h3>
-            <p>Mood, tone, restraint locked in writing.</p>
+            <p>The visual world is locked in writing before a single asset is produced. Mood, tone, restraint, references, and product requirements are documented and submitted for client approval. Production does not begin until this is signed off.</p>
           </article>
 
           <article class="method-card">
             <span class="method-number">03</span>
             <h3>Visual System Map</h3>
-            <p>Every asset assigned a use case.</p>
+            <p>Every asset is assigned a use case before production begins. Hero image, social format, email banner, paid creative — each piece has a job. This prevents wasted output and keeps delivery organized from the start.</p>
           </article>
 
           <article class="method-card">
             <span class="method-number">04</span>
             <h3>Production</h3>
-            <p>AI-assisted output, human-directed.</p>
+            <p>AI-assisted production runs against the approved direction. The brand brief is the operating system for every frame — not prompts guessed at random. Every output is measured against the approved direction document before it moves to review.</p>
           </article>
 
-          <article class="method-card">
+          <article class="method-card is-gate">
+            <span class="gate-badge">Approval Gate</span>
             <span class="method-number">05</span>
             <h3>Human Review</h3>
-            <p>Every frame reviewed before delivery.</p>
+            <p>Every asset is reviewed by a human before delivery. Brand accuracy, visual consistency, use-case fit, and production quality are checked against the approved direction. Nothing ships without passing this step.</p>
           </article>
 
           <article class="method-card">
             <span class="method-number">06</span>
             <h3>Delivery &amp; Iteration</h3>
-            <p>Organized files. Two revision rounds.</p>
+            <p>Final assets are delivered organized by use case and channel — not dumped in a folder. Two rounds of revisions are included. A revision refines the approved direction. A change request changes the direction, scope, deliverables, or timeline.</p>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ═══════════════════════════
+         HOW IT WORKS
+    ════════════════════════════ -->
     <section class="section">
       <div class="container split">
         <div>
@@ -151,31 +184,9 @@
       </div>
     </section>
 
-    <section class="section process-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Process</span>
-          <h2>How projects run.</h2>
-          <p class="lead">
-            A clear process protects the brand, the direction, the review process, and the final delivery.
-          </p>
-        </div>
-
-        <div class="process-flow">
-          <div class="process-flow-item">Brief Intake</div>
-          <div class="process-flow-item">Brand Direction</div>
-          <div class="process-flow-item">Visual System Map</div>
-          <div class="process-flow-item">Production</div>
-          <div class="process-flow-item">Human Review</div>
-          <div class="process-flow-item">Delivery</div>
-        </div>
-
-        <p class="process-note">
-          A revision refines the approved direction. A change request changes the direction, scope, deliverables, or timeline.
-        </p>
-      </div>
-    </section>
-
+    <!-- ═══════════════════════════
+         CLOSING PRINCIPLE
+    ════════════════════════════ -->
     <section class="section">
       <div class="container">
         <div class="case-study-block case-study-dark">
@@ -193,6 +204,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -206,7 +218,7 @@
 
       <div class="footer-column">
         <span class="footer-heading">Site</span>
-         <a href="/">Home</a>
+        <a href="/">Home</a>
         <a href="/method/">Method</a>
         <a href="/standard/">Standard</a>
         <a href="/services/">Services</a>
