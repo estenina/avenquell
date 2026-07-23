@@ -50,20 +50,114 @@
   <meta name="twitter:image" content="https://avenquell.com/assets/avenquell-hero-v2.png" />
   <meta name="theme-color" content="#0b0a08" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Avenquell Studio",
-    "url": "https://avenquell.com/",
-    "logo": "https://avenquell.com/assets/logo.png",
-    "description": "Direction-first creative production for brands that need campaign-ready content.",
-    "sameAs": [
-      "https://www.linkedin.com/company/avenquell-studio/",
-      "https://www.instagram.com/avenquell.studio/"
-    ]
-  }
-  </script>
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://avenquell.com/#organization",
+      "name": "Avenquell Studio",
+      "url": "https://avenquell.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://avenquell.com/assets/logo.png"
+      },
+      "image": "https://avenquell.com/assets/avenquell-hero-v2.png",
+      "description": "Avenquell Studio is a direction-first creative production agency creating brand-controlled content systems, campaign-ready visuals, and AI-assisted creative production for modern brands.",
+      "email": "studio@avenquell.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/avenquell-studio/",
+        "https://www.instagram.com/avenquell.studio/"
+      ],
+      "knowsAbout": [
+        "AI-assisted creative production",
+        "Creative direction",
+        "Campaign-ready content",
+        "Luxury brand content",
+        "Product launch campaigns",
+        "Monthly creative content systems",
+        "Brand-controlled visual production",
+        "Founder content systems"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://avenquell.com/#website",
+      "url": "https://avenquell.com/",
+      "name": "Avenquell Studio",
+      "publisher": {
+        "@id": "https://avenquell.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://avenquell.com/#professional-service",
+      "name": "Avenquell Studio",
+      "url": "https://avenquell.com/",
+      "image": "https://avenquell.com/assets/avenquell-hero-v2.png",
+      "description": "Direction-first creative production for brands that need campaign-ready content, launch assets, monthly creative systems, and AI-assisted visual production.",
+      "email": "studio@avenquell.com",
+      "provider": {
+        "@id": "https://avenquell.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "serviceType": [
+        "Premium Visual Audit",
+        "Launch Creative Package",
+        "Monthly Creative Content System",
+        "Founder Content System",
+        "AI-assisted creative production",
+        "Creative direction",
+        "Campaign visual production"
+      ],
+      "priceRange": "$1,500–$9,500+"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://avenquell.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this AI content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI may be part of the production layer. The offer is direction-first creative production: strategy, direction, production, review, and use-case mapping. The direction is always human."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Projects typically start around $5,000. Monthly Creative Content Systems begin around $9,500 per month with a three-month minimum, depending on scope and complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you make our exact product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Product accuracy depends on references, product complexity, and intended use. Physical product or studio-grade references may be required when accuracy matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we get the prompts or raw files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Final delivery includes approved assets in agreed formats. Internal prompts, raw generations, rejected outputs, and tool workflows are not included unless explicitly scoped."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <link rel="stylesheet" href="/style.css">
 
