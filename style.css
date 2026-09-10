@@ -1353,3 +1353,118 @@
   max-width: none;
 }
     }
+
+
+/* =========================================================
+   HOME PAGE SPACING — compact editorial rhythm
+   Scoped to the short homepage so inner pages keep their
+   existing spacing.
+   ========================================================= */
+
+/* Desktop / tablet */
+#what-we-do.what-section {
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+#featured-work.home-work-section {
+  padding-top: 64px;
+  padding-bottom: 68px;
+}
+
+#featured-work.home-work-section .section-header {
+  margin-bottom: 26px;
+}
+
+#featured-work.home-work-section .concept-study-feature {
+  margin-top: 0;
+}
+
+#contact-preview.home-closing {
+  padding-top: 64px;
+  padding-bottom: 54px;
+}
+
+#contact-preview.home-closing .section-header {
+  margin-bottom: 24px;
+}
+
+#contact-preview.home-closing .section-actions {
+  margin-top: 26px;
+}
+
+
+/* Mobile */
+@media (max-width: 860px) {
+  #hero.hero {
+    padding-top: 34px;
+    padding-bottom: 42px;
+  }
+
+  #what-we-do.what-section {
+    padding-top: 40px;
+    padding-bottom: 34px;
+  }
+
+  #what-we-do.what-section .home-intro-links {
+    margin-top: 22px;
+  }
+
+  #featured-work.home-work-section {
+    padding-top: 36px;
+    padding-bottom: 42px;
+  }
+
+  #featured-work.home-work-section .section-header {
+    margin-bottom: 22px;
+  }
+
+  #featured-work.home-work-section .section-header .lead {
+    margin-top: 14px;
+  }
+
+  #featured-work.home-work-section .concept-study-feature {
+    margin-top: 0;
+  }
+
+  #contact-preview.home-closing {
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+
+  #contact-preview.home-closing .section-header {
+    margin-bottom: 20px;
+  }
+
+  #contact-preview.home-closing .section-actions {
+    margin-top: 22px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 560px) {
+  #hero.hero {
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+
+  #what-we-do.what-section {
+    padding-top: 34px;
+    padding-bottom: 28px;
+  }
+
+  #featured-work.home-work-section {
+    padding-top: 30px;
+    padding-bottom: 36px;
+  }
+
+  #featured-work.home-work-section .section-header {
+    margin-bottom: 18px;
+  }
+
+  #contact-preview.home-closing {
+    padding-top: 34px;
+    padding-bottom: 30px;
+  }
+}
