@@ -343,6 +343,11 @@
       .founder-photo-grid {
         max-width: 620px;
       }
+
+      /* Mobile footer: navigation is already available in the mobile menu. */
+      .footer-site-column {
+        display: none;
+      }
     }
 
     @media (max-width: 560px) {
@@ -538,7 +543,7 @@
         </p>
       </div>
 
-      <div class="footer-column">
+      <div class="footer-column footer-site-column">
         <span class="footer-heading">Site</span>
         <a href="/">Home</a>
         <a href="/method/">Method</a>
