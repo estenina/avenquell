@@ -130,6 +130,62 @@
         padding: 8px 0;
       }
     }
+
+
+    /* Services Diagnose / Fix / Grow structure */
+    .services-stage-map {
+      margin-top: 34px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(184, 135, 93, 0.22);
+    }
+
+    .services-stage-map-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .services-stage-map-column {
+      padding: 22px;
+      border: 1px solid rgba(184, 135, 93, 0.22);
+      background: rgba(255, 252, 247, 0.45);
+    }
+
+    .services-stage-map-column h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.35rem, 2vw, 1.75rem);
+    }
+
+    .services-stage-map-column a {
+      display: block;
+      margin: 8px 0;
+      text-decoration: none;
+    }
+
+    .services-stage-map-note {
+      margin-top: 22px;
+      max-width: 780px;
+    }
+
+    .services-stage-header {
+      margin-bottom: 28px;
+    }
+
+    .services-stage-header h2 {
+      margin-bottom: 10px;
+    }
+
+    .service-anchor {
+      scroll-margin-top: 120px;
+    }
+
+    @media (max-width: 860px) {
+      .services-stage-map-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 
@@ -140,7 +196,7 @@
         <img class="brand-mark" src="/assets/logo.png" alt="Avenquell Studio logo" />
         <div class="brand-copy">
           <span class="brand-title">Avenquell Studio</span>
-          <span class="brand-subtitle">Direction-First Creative Production</span>
+          <span class="brand-subtitle">Direction before production. Diagnosis before spend.</span>
         </div>
       </a>
 
@@ -212,14 +268,44 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Services &amp; Verticals</span>
-          <h1>Three public offers. Built for specific brand stages.</h1>
+          <h1>Every service starts with a clear problem.</h1>
           <p class="lead">
-            Each offer is a different entry point. The work, the method, and the standard are the same:
-            direction-first creative production, brand control, human review, and campaign-ready delivery.
+            We work in three stages — diagnosis, execution, ongoing systems. Most clients start with a diagnostic. Some come with a defined project. A few are ready for a monthly system. All three paths lead to the same standard.
           </p>
         </div>
 
-        <!-- VERTICALS GRID — with descriptions -->
+        <div class="services-stage-map" aria-label="Avenquell service paths">
+          <div class="services-stage-map-grid">
+            <div class="services-stage-map-column">
+              <span class="eyebrow">DIAGNOSE</span>
+              <a href="#premium-visual-audit">Premium Visual Audit</a>
+              <a href="#ad-diagnostic">Ad Diagnostic</a>
+              <a href="#marketing-research">Marketing Research</a>
+            </div>
+
+            <div class="services-stage-map-column">
+              <span class="eyebrow">FIX</span>
+              <a href="#conversion-foundation">Conversion Foundation</a>
+              <a href="#campaign-build">Campaign Build</a>
+              <a href="#website">Website</a>
+              <a href="#strategy-positioning">Strategy &amp; Positioning</a>
+              <a href="#launch-creative-package">Launch Creative Package</a>
+            </div>
+
+            <div class="services-stage-map-column">
+              <span class="eyebrow">GROW</span>
+              <a href="#monthly-creative-content-system">Monthly Creative Content System</a>
+              <a href="#paid-media-management">Paid Media Management</a>
+              <a href="#content-plan-scripts">Content Plan &amp; Scripts</a>
+              <a href="#analytics-reporting">Analytics &amp; Reporting</a>
+              <a href="#quantitative-segment-analytics">Quantitative &amp; Segment Analytics</a>
+              <a href="#full-creative-strategy-system">Full Creative &amp; Strategy System</a>
+            </div>
+          </div>
+          <p class="services-stage-map-note">You don't have to start at the beginning. You start where the problem is.</p>
+        </div>
+
+        <!-- VERTICALS GRID — unchanged -->
         <div class="verticals-visual-grid">
           <article class="vertical-visual-card">
             <img src="/assets/moodboard-fashion.jpeg" alt="DTC fashion and apparel visual direction by Avenquell Studio" />
@@ -249,22 +335,18 @@
     </section>
 
     <!-- ═══════════════════════════
-         02 · PUBLIC OFFERS — 4 CARDS
+         02 · DIAGNOSE
     ════════════════════════════ -->
-    <section class="section">
+    <section id="diagnose" class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Public Offers</span>
-          <h2>Three entry points. One standard.</h2>
-          <p class="lead">
-            Every offer follows the same method and standard — direction first, human review, campaign-ready delivery.
-            The starting point depends on where your brand is right now.
-          </p>
+        <div class="services-stage-header">
+          <span class="eyebrow">Diagnose</span>
+          <h2>Diagnose</h2>
+          <p class="lead">Paid diagnostics that tell you what is wrong, in writing, before you spend more.</p>
         </div>
 
         <div class="cards">
-
-          <article class="card">
+          <article id="premium-visual-audit" class="card service-anchor">
             <span class="card-tag">One-time · 3 business days</span>
             <h3>Premium Visual Audit</h3>
             <div class="price">$1,500 — visual review</div>
@@ -287,7 +369,80 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="ad-diagnostic" class="card service-anchor">
+            <h3>Ad Diagnostic</h3>
+            <div class="price">$3,500</div>
+            <p>We identify where your ad budget is going and why it isn't producing results — including a check that your measurement is real.</p>
+            <p>Includes 3–5 ready-to-run ad concepts. Signed by Iryna. We name the cause — or we refund you.</p>
+            <p>You upload your exports. No account access required. Delivered in 5 business days from a complete upload.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="https://links.avenquell.com/review">Get the Ad Diagnostic →</a>
+            </div>
+          </article>
+
+          <article id="marketing-research" class="card service-anchor">
+            <h3>Marketing Research</h3>
+            <div class="price">$7,500 · 2 weeks / $12,500 · 4 weeks</div>
+            <p>For brands without their own data history. We map your buyers, their language, your competitive position, and where your message needs to go.</p>
+            <p>The $12,500 tier adds buyer interviews, analysis of your existing data, and live message testing.</p>
+            <p>Content planning and media planning are not included.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         03 · FIX
+    ════════════════════════════ -->
+    <section id="fix" class="section">
+      <div class="container">
+        <div class="services-stage-header">
+          <span class="eyebrow">Fix</span>
+          <h2>Fix what needs fixing.</h2>
+          <p class="lead">One project, scoped after diagnosis. Price locked before production starts.</p>
+        </div>
+
+        <div class="cards">
+          <article id="conversion-foundation" class="card service-anchor">
+            <h3>Conversion Foundation</h3>
+            <div class="price">$6,500 / $9,500 with server-side tracking</div>
+            <p>Landing page, lead tracking, and revenue attribution — built as one product. We don't sell the landing page separately from the measurement.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="campaign-build" class="card service-anchor">
+            <h3>Campaign Build</h3>
+            <div class="price">$2,500 per channel</div>
+            <p>One-time build or rebuild of a Meta or Google campaign: structure, audiences, bidding, and UTM tagging. One channel per project.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="website" class="card service-anchor">
+            <h3>Website</h3>
+            <div class="price">$9,500 / $14,000 in regulated categories</div>
+            <p>A site built around your offer. Lead tracking and revenue attribution are not included — that's Conversion Foundation.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="strategy-positioning" class="card service-anchor">
+            <h3>Strategy &amp; Positioning</h3>
+            <div class="price">From $5,000</div>
+            <p>Your segments, competitors, positioning, and offer — delivered as a working document you keep.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="launch-creative-package" class="card service-anchor">
             <span class="card-tag">Project-based · 2–4 weeks</span>
             <h3>Launch Creative Package</h3>
             <div class="price">From $6,500</div>
@@ -300,8 +455,23 @@
               <a class="btn btn-secondary" href="/contact/">Plan a Launch</a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="card highlight-card">
+    <!-- ═══════════════════════════
+         04 · GROW
+    ════════════════════════════ -->
+    <section id="grow" class="section">
+      <div class="container">
+        <div class="services-stage-header">
+          <span class="eyebrow">Grow</span>
+          <h2>Systems that run month to month.</h2>
+          <p class="lead">Marketing services require a 3-month minimum, then monthly with 30 days' notice. The Monthly Creative Content System runs on a 2-month minimum. Ad budgets go directly to the platforms. All accounts are set up in your name.</p>
+        </div>
+
+        <div class="cards">
+          <article id="monthly-creative-content-system" class="card highlight-card service-anchor">
             <span class="card-tag">Flagship · 2-month minimum</span>
             <h3>Monthly Creative Content System</h3>
             <div class="price">From $9,500/mo</div>
@@ -316,13 +486,58 @@
             </div>
           </article>
 
+          <article id="paid-media-management" class="card service-anchor">
+            <h3>Paid Media Management</h3>
+            <div class="price">$3,500/mo first channel · +$1,500 each additional</div>
+            <p>Above $10K monthly ad spend: 15% from $10K, 12% from $30K, 10% from $50K, 8% from $100K — percentage steps down as spend grows.</p>
+            <p>Reporting ties spend to outcomes, not impressions. Ad budget goes directly to the platforms. We name the person running your account.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="content-plan-scripts" class="card service-anchor">
+            <h3>Content Plan &amp; Scripts</h3>
+            <div class="price">From $5,000/mo</div>
+            <p>A monthly content plan and scripts your team publishes. Posting and community management are not included.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="analytics-reporting" class="card service-anchor">
+            <h3>Analytics &amp; Reporting</h3>
+            <div class="price">$2,500/mo</div>
+            <p>A monthly report built from your data exports: what worked, what didn't, what to do next. Analytics setup is not included.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="quantitative-segment-analytics" class="card service-anchor">
+            <h3>Quantitative &amp; Segment Analytics</h3>
+            <div class="price">From $5,000 · one-time</div>
+            <p>Who is actually buying and where your best customers come from — analyzed from your exports. We work from files you send, not direct database access.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
+
+          <article id="full-creative-strategy-system" class="card service-anchor">
+            <h3>Full Creative &amp; Strategy System</h3>
+            <div class="price">$12,500/mo — one primary segment and channel</div>
+            <div class="price">$18,000/mo — two to three segments, each with its own funnel and content plan</div>
+            <p>Strategy, content plan and scripts, visual production, and a monthly report. Paid media management is not included.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
+            </div>
+          </article>
         </div>
 
-        <!-- DISCOVERY-ONLY — explained clearly -->
         <div class="services-discovery-block">
           <span class="eyebrow">Discovery-Only Offers</span>
           <p>The following offers are available based on project fit and are not listed publicly. They are surfaced through the inquiry process when scope, brand stage, and timeline align. <a href="/contact/">Contact us to discuss →</a></p>
-          <p class="discovery-list">Brand Direction Intensive &nbsp;·&nbsp; Product Variation Pilot &nbsp;·&nbsp; Beauty Visual Content Package &nbsp;·&nbsp; Premium Local Visual Refresh &nbsp;·&nbsp; AI Avatar Add-on</p>
+          <p class="discovery-list">Brand Direction Intensive &nbsp;·&nbsp; Beauty Visual Content Package &nbsp;·&nbsp; Premium Local Visual Refresh</p>
         </div>
       </div>
     </section>
@@ -510,7 +725,6 @@
         <a href="/services/">Services</a>
         <a href="/work/">Work</a>
         <a href="/pricing/">Pricing</a>
-        <a href="/#faq">FAQ</a>
         <a href="/contact/">Contact</a>
       </div>
 
