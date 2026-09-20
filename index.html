@@ -361,6 +361,47 @@
       }
     }
 
+    /* Home: Diagnose / Fix / Grow steps */
+    .home-steps-section {
+      border-top: 1px solid rgba(184, 135, 93, 0.16);
+      border-bottom: 1px solid rgba(184, 135, 93, 0.16);
+    }
+
+    .home-steps-header {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .home-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(24px, 4vw, 54px);
+    }
+
+    .home-step-card {
+      padding-top: 20px;
+      border-top: 1px solid rgba(184, 135, 93, 0.35);
+    }
+
+    .home-step-card h3 {
+      margin: 0 0 12px;
+    }
+
+    .home-step-card p {
+      margin: 0 0 18px;
+    }
+
+    .home-step-link {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    @media (max-width: 860px) {
+      .home-steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 
@@ -371,7 +412,7 @@
         <img class="brand-mark" src="/assets/logo.png" alt="Avenquell Studio logo" />
         <div class="brand-copy">
           <span class="brand-title">Avenquell Studio</span>
-          <span class="brand-subtitle">Direction-First Creative Production</span>
+          <span class="brand-subtitle">Direction before production. Diagnosis before spend.</span>
         </div>
       </a>
 
@@ -444,16 +485,15 @@
         <div class="hero-copy">
           <span class="eyebrow">Avenquell · Creative Production Studio</span>
 
-          <h1>Direction-first creative production for modern brands.</h1>
+          <h1>We find what's broken. Then we build what works.</h1>
 
           <p class="lead">
-            We combine human creative direction with AI-assisted production to create refined,
-            campaign-ready visual content that feels intentional, consistent, and built for the brand.
+            Avenquell is a creative and marketing studio for brands that need a real diagnosis before they spend another dollar on production or ads. We run the diagnostic, fix what we find, and build systems that hold.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="/work/">View Our Work</a>
-            <a class="btn btn-secondary" href="/contact/">Start a Conversation</a>
+            <a class="btn btn-primary" href="/services/#diagnose">Start with a diagnostic</a>
+            <a class="btn btn-secondary" href="/method/">See how we work</a>
           </div>
 
           <div class="trust-strip">
@@ -481,7 +521,38 @@
     </section>
 
     <!-- ═══════════════════════════
-         02 · SHORT INTRO
+         02 · DIAGNOSE / FIX / GROW
+    ════════════════════════════ -->
+    <section id="how-we-work" class="section home-steps-section">
+      <div class="container">
+        <div class="home-steps-header">
+          <h2>What it looks like to work with us</h2>
+        </div>
+
+        <div class="home-steps-grid">
+          <article class="home-step-card">
+            <h3>Diagnose</h3>
+            <p>Find out what your visuals, ads, or positioning are actually doing — before you produce more of it.</p>
+            <a class="home-step-link" href="/services/#diagnose">See diagnostics →</a>
+          </article>
+
+          <article class="home-step-card">
+            <h3>Fix</h3>
+            <p>Websites, campaigns, visual systems, content — built to the spec the diagnostic defined.</p>
+            <a class="home-step-link" href="/services/#fix">See production services →</a>
+          </article>
+
+          <article class="home-step-card">
+            <h3>Grow</h3>
+            <p>Monthly systems for brands that need consistent creative and marketing output at a standard that holds.</p>
+            <a class="home-step-link" href="/services/#grow">See monthly options →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         03 · SHORT INTRO
          Detailed service/method content belongs on the inner pages.
     ════════════════════════════ -->
     <section id="what-we-do" class="section what-section">
