@@ -130,6 +130,100 @@
         padding: 8px 0;
       }
     }
+
+
+    /* Pricing Diagnose / Fix / Grow */
+    .pricing-stage-header {
+      margin-bottom: 28px;
+    }
+
+    .pricing-stage-header h2 {
+      margin-bottom: 10px;
+    }
+
+    .pricing-service-section {
+      scroll-margin-top: 120px;
+    }
+
+    .pricing-service-section + .pricing-service-section {
+      padding-top: 38px;
+    }
+
+    .pricing-service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .pricing-service-grid .pricing-card {
+      height: 100%;
+    }
+
+    .pricing-card-full {
+      grid-column: 1 / -1;
+    }
+
+    .pricing-card h4 {
+      margin: 24px 0 10px;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .pricing-card ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .pricing-card li {
+      margin: 7px 0;
+    }
+
+    .pricing-card .fine-print {
+      font-size: 0.93rem;
+      opacity: 0.82;
+    }
+
+    .pricing-card details {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(184, 135, 93, 0.16);
+    }
+
+    .pricing-card summary {
+      cursor: pointer;
+      color: #d8b07d;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .pricing-card .section-actions {
+      margin-top: 24px;
+    }
+
+    .pricing-group-label {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .pricing-note-tight {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 860px) {
+      .pricing-service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-card-full {
+        grid-column: auto;
+      }
+
+      .pricing-service-section + .pricing-service-section {
+        padding-top: 24px;
+      }
+    }
+
   </style>
 </head>
 
@@ -140,7 +234,7 @@
         <img class="brand-mark" src="/assets/logo.png" alt="Avenquell Studio logo" />
         <div class="brand-copy">
           <span class="brand-title">Avenquell Studio</span>
-          <span class="brand-subtitle">Direction-First Creative Production</span>
+          <span class="brand-subtitle">Direction before production. Diagnosis before spend.</span>
         </div>
       </a>
 
@@ -208,176 +302,170 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Pricing &amp; Starting Points</span>
-          <h1>Start with a $1,500 diagnostic. Projects from $6,500.</h1>
+          <h1>Every price is here. Every starting point is clear.</h1>
           <p class="lead">
-            Avenquell does not price by number of AI files. We price by creative direction,
-            production complexity, usage needs, product accuracy, review depth, delivery structure,
-            and monthly cadence.
+            We work in three stages — diagnosis, execution, ongoing systems. Most clients start with a diagnostic. Some come with a defined project. A few are ready for a monthly system. All three paths lead to the same standard.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class="pricing-grid">
+    <section id="diagnose" class="section pricing-service-section">
+      <div class="container">
+        <div class="pricing-stage-header">
+          <span class="eyebrow pricing-group-label">Diagnose</span>
+          <h2>Paid diagnostics that tell you what is wrong, in writing, before you spend more.</h2>
+        </div>
+
+        <div class="pricing-service-grid">
           <article class="pricing-card">
             <span class="pricing-label">One-time · 3 business days</span>
             <h3>Premium Visual Audit</h3>
             <div class="pricing-amount">$1,500 — visual review</div>
             <div class="pricing-amount">$2,500 — visual review plus performance read</div>
-            <p>
-              A paid visual diagnostic for brands that need direction before production.
-              Both tiers include a full review of your current visual system and a defined
-              production scope with fixed pricing.
-            </p>
-            <p>
-              The $2,500 tier adds a read of your own numbers: you send your post and ad
-              creative stats, and we connect what the visuals are doing to how people
-              actually responded. No account access required.
-            </p>
-            <p>
-              <small>
-                The $1,500 tier works from a brief you fill in. The $2,500 tier adds your
-                own exported stats — no logins, no account access, nothing to hand over.
-              </small>
-            </p>
-            <p>
-              <strong>Three business days from the point we have everything we need from you.</strong>
-            </p>
+            <p>A paid visual diagnostic for brands that need direction before production. Both tiers include a full review of your current visual system and a defined production scope with fixed pricing.</p>
+            <p>The $2,500 tier adds a read of your own numbers: you send your post and ad creative stats, and we connect what the visuals are doing to how people actually responded. No account access required.</p>
+            <p><small>The $1,500 tier works from a brief you fill in. The $2,500 tier adds your own exported stats — no logins, no account access, nothing to hand over.</small></p>
+            <p><strong>Three business days from the point we have everything we need from you.</strong></p>
             <a class="btn btn-secondary" href="/contact/">Book the Audit</a>
           </article>
 
+          <article class="pricing-card pricing-card-full">
+            <span class="pricing-label">One-time · 5 business days</span>
+            <h3>Ad Diagnostic</h3>
+            <div class="pricing-amount">$3,500</div>
+            <p>Your ad spend is running. Results aren't following. This diagnostic traces the path from ad to lead — and finds where it breaks.</p>
+            <p>We work from your exports, not your logins. You send campaign exports, analytics pulls, and screenshots of your settings — taken in the last seven days, not from memory. From those, we read what's actually configured: whether conversions are set to a button click instead of a real submission, whether calls are counted at all, whether your sources are tagged, whether your spend is chasing duplicated events. We name the problem, rank what to fix first, and include 3–5 ad concepts built around the diagnosis — so the report ends with something you can act on, not just read. Signed by Iryna.</p>
+
+            <h4>What you upload</h4>
+            <p><strong>Required:</strong></p>
+            <ul>
+              <li>Campaign exports from Meta Ads Manager or Google Ads — CSV or XLSX, 60–90 days (not report screenshots)</li>
+              <li>GA4 export for the same period</li>
+              <li>Average order value and rough margin</li>
+              <li>What your business counts as a conversion</li>
+              <li>Screenshots of your settings screens taken in the last 7 days: goals and conversions, bid strategy, audiences</li>
+            </ul>
+            <p><strong>Helpful:</strong></p>
+            <ul>
+              <li>CRM deal export with sources, 90 days</li>
+              <li>Call tracking export, 60–90 days</li>
+            </ul>
+            <p class="fine-print"><a href="https://links.avenquell.com/uploads-guide">How to export the reports →</a></p>
+
+            <details>
+              <summary>See details</summary>
+              <h4>What we can't verify from your uploads</h4>
+              <p>Screenshots show configuration. They don't show behavior. Without live access, we can't confirm that a conversion event actually fires on a real lead submission — only that it's set to something. We also can't verify real audience sizes inside your ad account, whether your Meta Conversions API is sending quality signals, whether your pixel fires correctly on live traffic, how your tracking behaves across domain transitions, or the history of settings changes over time. These gaps are noted in the report.</p>
+
+              <h4>Guarantee</h4>
+              <p>We name the cause — or we refund you. Applies when the full required upload was complete and the data did not support a named diagnosis. Items listed above under “What we can't verify” are excluded from refund scope — they are disclosed before you pay.</p>
+
+              <h4>Credit</h4>
+              <p>The diagnostic fee is credited against your next project if you move forward within two weeks of receiving the report: fully toward a Conversion Foundation or Campaign Build, half toward the first month of Paid Media Management — up to the cost of that project. If you apply the credit, the refund guarantee closes; the two are mutually exclusive. Two weeks, because ad account data moves fast — your campaigns look different a month out, and so does the diagnosis.</p>
+            </details>
+
+            <p><strong>Not a fit if:</strong> your ads have been running less than 2–3 months. There is not enough history to read.</p>
+            <div class="section-actions">
+              <a class="btn btn-secondary" href="https://links.avenquell.com/review">Get the Ad Diagnostic →</a>
+            </div>
+            <p class="fine-print">Or DM AUDIT to <a href="https://instagram.com/avenquell.studio" target="_blank" rel="noopener noreferrer">@avenquell.studio</a> on Instagram to start there.</p>
+          </article>
+
           <article class="pricing-card">
-            <span class="pricing-label">2–4 weeks delivery</span>
-            <h3>Launch Creative Package</h3>
-            <div class="pricing-amount">From $6,500</div>
-            <p>
-              For product launches, seasonal campaigns, offer rollouts, and campaign-ready asset systems.
-            </p>
-            <a class="btn btn-secondary" href="/contact/">Plan a Launch</a>
-          </article>
-
-          <article class="pricing-card pricing-card-featured">
-            <span class="pricing-label">Flagship · 2-month minimum</span>
-            <h3>Monthly Creative Content System</h3>
-            <div class="pricing-amount">From $9,500/mo</div>
-            <p>
-              For brands that need ongoing creative production, visual consistency, and monthly campaign support.
-            </p>
-            <p>No annual contract. Month-to-month after the initial two cycles.</p>
-            <a class="btn btn-primary" href="/contact/">Request the Deck</a>
+            <h3>Marketing Research</h3>
+            <div class="pricing-amount">$7,500 · 2 weeks / $12,500 · 4 weeks</div>
+            <p>For brands without their own data history. We map your buyers, their language, your competitive position, and where your message needs to go.</p>
+            <p>The $12,500 tier adds buyer interviews, analysis of your existing data, and live message testing.</p>
+            <p>Content planning and media planning are not included.</p>
+            <a class="btn btn-secondary" href="/contact/">Start the Conversation →</a>
           </article>
         </div>
-
-        <p class="pricing-note">
-          Final scope depends on creative direction, product accuracy needs, number of use cases,
-          review depth, asset complexity, and delivery cadence.
-        </p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Pricing Structure</span>
-          <h2>How the price gets fixed</h2>
+    <section id="fix" class="section pricing-service-section">
+      <div class="container">
+        <div class="pricing-stage-header">
+          <span class="eyebrow pricing-group-label">Fix</span>
+          <h2>Fix what needs fixing.</h2>
+          <p class="lead">One project, scoped after diagnosis. Price locked before production starts.</p>
         </div>
 
-        <div class="panel">
-          <p>Most creative pricing is a range that moves. Ours does not.</p>
-          <br />
-          <p>
-            The audit defines the scope: how many products, what source material exists,
-            how many characters and settings the work requires. Once that is agreed,
-            the price is fixed in writing before production starts.
-          </p>
-          <br />
-          <p>
-            If the scope changes, the price is recalculated against a published rate —
-            not renegotiated. You will always know what a change costs before you approve it.
-          </p>
-          <br />
-          <p>No "starting from". No mid-project adjustments.</p>
-          <br />
-          <p>
-            The audit fee is credited against production if you move forward within
-            two weeks of receiving the report: fully toward a launch package, half
-            toward a monthly system. Two weeks, because the findings date quickly —
-            a month on, your account has moved and half the report no longer applies.
-          </p>
+        <div class="pricing-service-grid">
+          <article class="pricing-card"><h3>Conversion Foundation</h3><div class="pricing-amount">$6,500 / $9,500 with server-side tracking</div><p>Landing page, lead tracking, and revenue attribution — built as one product. We don't sell the landing page separately from the measurement.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Campaign Build</h3><div class="pricing-amount">$2,500 per channel</div><p>One-time build or rebuild of a Meta or Google campaign: structure, audiences, bidding, and UTM tagging. One channel per project.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Website</h3><div class="pricing-amount">$9,500 / $14,000 in regulated categories</div><p>A site built around your offer. Lead tracking and revenue attribution are not included — that's Conversion Foundation.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Strategy &amp; Positioning</h3><div class="pricing-amount">From $5,000</div><p>Your segments, competitors, positioning, and offer — delivered as a working document you keep.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><span class="pricing-label">2–4 weeks delivery</span><h3>Launch Creative Package</h3><div class="pricing-amount">From $6,500</div><p>For product launches, seasonal campaigns, offer rollouts, and campaign-ready asset systems.</p><a class="btn btn-secondary" href="/contact/">Plan a Launch</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Terms</span>
-          <h2>Clear terms, no annual lock-in.</h2>
+    <section id="grow" class="section pricing-service-section">
+      <div class="container">
+        <div class="pricing-stage-header">
+          <span class="eyebrow pricing-group-label">Grow</span>
+          <h2>Systems that run month to month.</h2>
+          <p class="lead">Marketing services require a 3-month minimum, then monthly with 30 days' notice. The Monthly Creative Content System runs on a 2-month minimum. Ad budgets go directly to the platforms. All accounts are set up in your name.</p>
         </div>
 
-        <div class="panel">
-          <p>Monthly systems run on a two-month minimum, then month to month.</p>
-          <br />
-          <p>No annual contract. No platform fee. No prepayment for the year.</p>
-          <br />
-          <p>Cancel with 30 days notice — by email, not by process.</p>
-          <br />
-          <p>
-            The two-month minimum exists for one reason: the second cycle is where
-            the work compounds. Anything shorter and you are judging a first draft.
-          </p>
+        <div class="pricing-service-grid">
+          <article class="pricing-card pricing-card-featured"><span class="pricing-label">Flagship · 2-month minimum</span><h3>Monthly Creative Content System</h3><div class="pricing-amount">From $9,500/mo</div><p>For brands that need ongoing creative production, visual consistency, and monthly campaign support.</p><p>No annual contract. Month-to-month after the initial two cycles.</p><a class="btn btn-primary" href="/contact/">Request the Deck</a></article>
+          <article class="pricing-card"><h3>Paid Media Management</h3><div class="pricing-amount">$3,500/mo first channel · +$1,500 each additional</div><p>Above $10K monthly ad spend: 15% from $10K, 12% from $30K, 10% from $50K, 8% from $100K — percentage steps down as spend grows.</p><p>Reporting ties spend to outcomes, not impressions. Ad budget goes directly to the platforms. We name the person running your account.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Content Plan &amp; Scripts</h3><div class="pricing-amount">From $5,000/mo</div><p>A monthly content plan and scripts your team publishes. Posting and community management are not included.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Analytics &amp; Reporting</h3><div class="pricing-amount">$2,500/mo</div><p>A monthly report built from your data exports: what worked, what didn't, what to do next. Analytics setup is not included.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Quantitative &amp; Segment Analytics</h3><div class="pricing-amount">From $5,000 · one-time</div><p>Who is actually buying and where your best customers come from — analyzed from your exports. We work from files you send, not direct database access.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
+          <article class="pricing-card"><h3>Full Creative &amp; Strategy System</h3><div class="pricing-amount">$12,500/mo — one primary segment and channel</div><div class="pricing-amount">$18,000/mo — two to three segments, each with its own funnel and content plan</div><p>Strategy, content plan and scripts, visual production, and a monthly report. Paid media management is not included.</p><a class="btn btn-secondary" href="/contact/">Start the Conversation →</a></article>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container split">
-        <div>
-          <span class="eyebrow">How Pricing Works</span>
-          <h2>We price the creative system, not the number of files.</h2>
-        </div>
-
+        <div><span class="eyebrow">Pricing Structure</span><h2>How the price gets fixed</h2></div>
         <div class="panel">
-          <p>
-            Avenquell pricing reflects creative direction, visual planning, production complexity,
-            review depth, product accuracy requirements, and how the assets will be used across campaign channels.
-          </p>
-          <br />
-          <p>
-            A simple visual audit is scoped differently from a launch package or a monthly creative system.
-            Every engagement is shaped around the business use case first.
-          </p>
+          <p>Most creative pricing is a range that moves. Ours does not.</p><br />
+          <p>The audit defines the scope: how many products, what source material exists, how many characters and settings the work requires. Once that is agreed, the price is fixed in writing before production starts.</p><br />
+          <p>If the scope changes, the price is recalculated against a published rate — not renegotiated. You will always know what a change costs before you approve it.</p><br />
+          <p>No "starting from". No mid-project adjustments.</p><br />
+          <p>The audit fee is credited against production if you move forward within two weeks of receiving the report: fully toward a launch package, half toward a monthly system. Two weeks, because the findings date quickly — a month on, your account has moved and half the report no longer applies.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div><span class="eyebrow">Terms</span><h2>Clear terms, no annual lock-in.</h2></div>
+        <div class="panel">
+          <p>Monthly systems run on a two-month minimum, then month to month.</p><br />
+          <p>No annual contract. No platform fee. No prepayment for the year.</p><br />
+          <p>Cancel with 30 days notice — by email, not by process.</p><br />
+          <p>The two-month minimum exists for one reason: the second cycle is where the work compounds. Anything shorter and you are judging a first draft.</p><br />
+          <p>Marketing services run on a 3-month minimum, then month-to-month with 30 days' written notice to exit. Ad budgets are paid directly to the platforms — not through us. All ad and analytics accounts are created in your company's name, and we'll tell you exactly who on our side is running them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div><span class="eyebrow">How Pricing Works</span><h2>We price the creative system, not the number of files.</h2></div>
+        <div class="panel"><p>Avenquell pricing reflects creative direction, visual planning, production complexity, review depth, product accuracy requirements, and how the assets will be used across campaign channels.</p><br /><p>A simple visual audit is scoped differently from a launch package or a monthly creative system. Every engagement is shaped around the business use case first.</p></div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Best Fit</span>
-          <h2>Choose the starting point that matches the stage of your brand.</h2>
-          <p class="lead">
-            If you are unsure which offer fits, start with the inquiry form. We will recommend the clearest path based on your timeline, budget, product complexity, and content needs.
-          </p>
-        </div>
-
+        <div class="section-header"><span class="eyebrow">Best Fit</span><h2>Choose the starting point that matches the stage of your brand.</h2><p class="lead">If you are unsure which offer fits, start with the inquiry form. We will recommend the clearest path based on your timeline, budget, product complexity, and content needs.</p></div>
         <div class="fit-grid">
-          <article class="fit-card">
-            <span class="fit-number">01</span>
-            <h3>Need clarity?</h3>
-            <p>Start with the Premium Visual Audit.</p>
-          </article>
-
-          <article class="fit-card">
-            <span class="fit-number">02</span>
-            <h3>Launching soon?</h3>
-            <p>Start with the Launch Creative Package.</p>
-          </article>
-
-          <article class="fit-card">
-            <span class="fit-number">03</span>
-            <h3>Need ongoing content?</h3>
-            <p>Start with the Monthly Creative Content System.</p>
-          </article>
-
+          <article class="fit-card"><span class="fit-number">01</span><h3>Need clarity?</h3><p>Start with the Premium Visual Audit.</p></article>
+          <article class="fit-card"><span class="fit-number">02</span><h3>Running ads but can't tell what's working?</h3><p>Start with the Ad Diagnostic.</p></article>
+          <article class="fit-card"><span class="fit-number">03</span><h3>No data of your own yet?</h3><p>Start with Marketing Research.</p></article>
+          <article class="fit-card"><span class="fit-number">04</span><h3>Need to clarify your positioning before anything else?</h3><p>Start with Strategy &amp; Positioning.</p></article>
+          <article class="fit-card"><span class="fit-number">05</span><h3>Need a landing page with lead tracking and revenue attribution?</h3><p>That's Conversion Foundation.</p></article>
+          <article class="fit-card"><span class="fit-number">06</span><h3>Launching soon?</h3><p>Start with the Launch Creative Package.</p></article>
+          <article class="fit-card"><span class="fit-number">07</span><h3>Need someone to run your paid media?</h3><p>Start with Paid Media Management.</p></article>
+          <article class="fit-card"><span class="fit-number">08</span><h3>Need ongoing content?</h3><p>Start with the Monthly Creative Content System.</p></article>
         </div>
       </div>
     </section>
@@ -387,15 +475,8 @@
         <div class="case-study-block case-study-dark">
           <span class="case-number">Next Step</span>
           <h3>Tell us what you are preparing for.</h3>
-          <p>
-            A launch, monthly content system, product campaign, or visual audit.
-            We will help you identify the right starting point.
-          </p>
-
-          <div class="section-actions">
-            <a class="btn btn-primary" href="/contact/">Start the Conversation</a>
-            <a class="btn btn-secondary" href="/services/">View Services</a>
-          </div>
+          <p>A launch, monthly content system, product campaign, or visual audit. We will help you identify the right starting point.</p>
+          <div class="section-actions"><a class="btn btn-primary" href="/contact/">Start the Conversation</a><a class="btn btn-secondary" href="/services/">View Services</a></div>
         </div>
       </div>
     </section>
@@ -412,12 +493,12 @@
 
       <div class="footer-column">
         <span class="footer-heading">Site</span>
+        <a href="/">Home</a>
         <a href="/method/">Method</a>
         <a href="/standard/">Standard</a>
         <a href="/services/">Services</a>
         <a href="/work/">Work</a>
         <a href="/pricing/">Pricing</a>
-        <a href="/#faq">FAQ</a>
         <a href="/contact/">Contact</a>
       </div>
 
@@ -425,7 +506,6 @@
         <span class="footer-heading">Connect</span>
         <a href="https://www.instagram.com/avenquell.studio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         <a href="https://www.linkedin.com/company/avenquell-studio/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="mailto:studio@avenquell.com">studio@avenquell.com</a>
       </div>
     </div>
 
