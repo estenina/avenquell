@@ -224,6 +224,68 @@
       }
     }
 
+    /* Compact vertical rhythm for Pricing page */
+    .pricing-section {
+      padding-bottom: 28px !important;
+    }
+
+    .pricing-service-section {
+      padding-top: 30px !important;
+      padding-bottom: 34px !important;
+    }
+
+    .pricing-service-section + .pricing-service-section {
+      padding-top: 30px !important;
+    }
+
+    .pricing-info-section,
+    .pricing-best-fit-section,
+    .pricing-next-step-section {
+      padding-top: 34px !important;
+      padding-bottom: 34px !important;
+    }
+
+    .pricing-stage-header,
+    .pricing-best-fit-section .section-header {
+      margin-bottom: 22px !important;
+    }
+
+    .pricing-info-section .split {
+      gap: clamp(24px, 4vw, 54px);
+    }
+
+    .pricing-info-section .panel {
+      margin-top: 0;
+    }
+
+    .pricing-next-step-section .case-study-block {
+      margin-top: 0;
+    }
+
+    @media (max-width: 860px) {
+      .pricing-section {
+        padding-bottom: 20px !important;
+      }
+
+      .pricing-service-section,
+      .pricing-service-section + .pricing-service-section,
+      .pricing-info-section,
+      .pricing-best-fit-section,
+      .pricing-next-step-section {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+
+      .pricing-stage-header,
+      .pricing-best-fit-section .section-header {
+        margin-bottom: 18px !important;
+      }
+
+      .pricing-info-section .split {
+        gap: 18px;
+      }
+    }
+
   </style>
 </head>
 
@@ -421,7 +483,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pricing-info-section">
       <div class="container split">
         <div><span class="eyebrow">Pricing Structure</span><h2>How the price gets fixed</h2></div>
         <div class="panel">
@@ -434,7 +496,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pricing-info-section">
       <div class="container split">
         <div><span class="eyebrow">Terms</span><h2>Clear terms, no annual lock-in.</h2></div>
         <div class="panel">
@@ -447,14 +509,14 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pricing-info-section">
       <div class="container split">
         <div><span class="eyebrow">How Pricing Works</span><h2>We price the creative system, not the number of files.</h2></div>
         <div class="panel"><p>Avenquell pricing reflects creative direction, visual planning, production complexity, review depth, product accuracy requirements, and how the assets will be used across campaign channels.</p><br /><p>A simple visual audit is scoped differently from a launch package or a monthly creative system. Every engagement is shaped around the business use case first.</p></div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pricing-best-fit-section">
       <div class="container">
         <div class="section-header"><span class="eyebrow">Best Fit</span><h2>Choose the starting point that matches the stage of your brand.</h2><p class="lead">If you are unsure which offer fits, start with the inquiry form. We will recommend the clearest path based on your timeline, budget, product complexity, and content needs.</p></div>
         <div class="fit-grid">
@@ -470,7 +532,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pricing-next-step-section">
       <div class="container">
         <div class="case-study-block case-study-dark">
           <span class="case-number">Next Step</span>
