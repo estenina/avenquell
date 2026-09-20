@@ -299,6 +299,61 @@
       }
     }
 
+    /* Keep Diagnose cards visually balanced on desktop. */
+    .pricing-diagnose-grid .pricing-card {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+    }
+
+    .pricing-diagnose-grid .pricing-card > .btn,
+    .pricing-diagnose-grid .pricing-card > .section-actions {
+      margin-top: auto;
+    }
+
+    .ad-diagnostic-card details.ad-diagnostic-more {
+      margin: 18px 0 20px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(184, 135, 93, 0.16);
+    }
+
+    .ad-diagnostic-card details.ad-diagnostic-more summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: #d8b07d;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      list-style: none;
+    }
+
+    .ad-diagnostic-card details.ad-diagnostic-more summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .ad-diagnostic-card details.ad-diagnostic-more summary::after {
+      content: "+";
+      font-size: 1rem;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .ad-diagnostic-card details.ad-diagnostic-more[open] summary::after {
+      content: "–";
+    }
+
+    .ad-diagnostic-card .ad-diagnostic-expanded {
+      padding-top: 16px;
+    }
+
+    @media (max-width: 860px) {
+      .pricing-diagnose-grid .pricing-card {
+        align-self: stretch;
+      }
+    }
+
   </style>
 </head>
 
@@ -405,42 +460,47 @@
             <a class="btn btn-secondary" href="/contact/">Book the Audit</a>
           </article>
 
-          <article class="pricing-card">
+          <article class="pricing-card ad-diagnostic-card">
             <span class="pricing-label">One-time · 5 business days</span>
             <h3>Ad Diagnostic</h3>
             <div class="pricing-amount">$3,500</div>
             <p>Your ad spend is running. Results aren't following. This diagnostic traces the path from ad to lead — and finds where it breaks.</p>
-            <p>We work from your exports, not your logins. You send campaign exports, analytics pulls, and screenshots of your settings — taken in the last seven days, not from memory. From those, we read what's actually configured: whether conversions are set to a button click instead of a real submission, whether calls are counted at all, whether your sources are tagged, whether your spend is chasing duplicated events. We name the problem, rank what to fix first, and include 3–5 ad concepts built around the diagnosis — so the report ends with something you can act on, not just read. Signed by Iryna.</p>
+            <p>We identify the cause, rank what to fix first, and include 3–5 ad concepts built around the diagnosis. No account access required.</p>
 
-            <h4>What you upload</h4>
-            <p><strong>Required:</strong></p>
-            <ul>
-              <li>Campaign exports from Meta Ads Manager or Google Ads — CSV or XLSX, 60–90 days (not report screenshots)</li>
-              <li>GA4 export for the same period</li>
-              <li>Average order value and rough margin</li>
-              <li>What your business counts as a conversion</li>
-              <li>Screenshots of your settings screens taken in the last 7 days: goals and conversions, bid strategy, audiences</li>
-            </ul>
-            <p><strong>Helpful:</strong></p>
-            <ul>
-              <li>CRM deal export with sources, 90 days</li>
-              <li>Call tracking export, 60–90 days</li>
-            </ul>
-            <p class="fine-print"><a href="https://links.avenquell.com/uploads-guide">How to export the reports →</a></p>
+            <details class="ad-diagnostic-more">
+              <summary>Read full details</summary>
+              <div class="ad-diagnostic-expanded">
+                <p>We work from your exports, not your logins. You send campaign exports, analytics pulls, and screenshots of your settings — taken in the last seven days, not from memory. From those, we read what's actually configured: whether conversions are set to a button click instead of a real submission, whether calls are counted at all, whether your sources are tagged, whether your spend is chasing duplicated events. We name the problem, rank what to fix first, and include 3–5 ad concepts built around the diagnosis — so the report ends with something you can act on, not just read. Signed by Iryna.</p>
 
-            <details>
-              <summary>See details</summary>
-              <h4>What we can't verify from your uploads</h4>
-              <p>Screenshots show configuration. They don't show behavior. Without live access, we can't confirm that a conversion event actually fires on a real lead submission — only that it's set to something. We also can't verify real audience sizes inside your ad account, whether your Meta Conversions API is sending quality signals, whether your pixel fires correctly on live traffic, how your tracking behaves across domain transitions, or the history of settings changes over time. These gaps are noted in the report.</p>
+                <h4>What you upload</h4>
+                <p><strong>Required:</strong></p>
+                <ul>
+                  <li>Campaign exports from Meta Ads Manager or Google Ads — CSV or XLSX, 60–90 days (not report screenshots)</li>
+                  <li>GA4 export for the same period</li>
+                  <li>Average order value and rough margin</li>
+                  <li>What your business counts as a conversion</li>
+                  <li>Screenshots of your settings screens taken in the last 7 days: goals and conversions, bid strategy, audiences</li>
+                </ul>
+                <p><strong>Helpful:</strong></p>
+                <ul>
+                  <li>CRM deal export with sources, 90 days</li>
+                  <li>Call tracking export, 60–90 days</li>
+                </ul>
+                <p class="fine-print"><a href="https://links.avenquell.com/uploads-guide">How to export the reports →</a></p>
 
-              <h4>Guarantee</h4>
-              <p>We name the cause — or we refund you. Applies when the full required upload was complete and the data did not support a named diagnosis. Items listed above under “What we can't verify” are excluded from refund scope — they are disclosed before you pay.</p>
+                <h4>What we can't verify from your uploads</h4>
+                <p>Screenshots show configuration. They don't show behavior. Without live access, we can't confirm that a conversion event actually fires on a real lead submission — only that it's set to something. We also can't verify real audience sizes inside your ad account, whether your Meta Conversions API is sending quality signals, whether your pixel fires correctly on live traffic, how your tracking behaves across domain transitions, or the history of settings changes over time. These gaps are noted in the report.</p>
 
-              <h4>Credit</h4>
-              <p>The diagnostic fee is credited against your next project if you move forward within two weeks of receiving the report: fully toward a Conversion Foundation or Campaign Build, half toward the first month of Paid Media Management — up to the cost of that project. If you apply the credit, the refund guarantee closes; the two are mutually exclusive. Two weeks, because ad account data moves fast — your campaigns look different a month out, and so does the diagnosis.</p>
+                <h4>Guarantee</h4>
+                <p>We name the cause — or we refund you. Applies when the full required upload was complete and the data did not support a named diagnosis. Items listed above under “What we can't verify” are excluded from refund scope — they are disclosed before you pay.</p>
+
+                <h4>Credit</h4>
+                <p>The diagnostic fee is credited against your next project if you move forward within two weeks of receiving the report: fully toward a Conversion Foundation or Campaign Build, half toward the first month of Paid Media Management — up to the cost of that project. If you apply the credit, the refund guarantee closes; the two are mutually exclusive. Two weeks, because ad account data moves fast — your campaigns look different a month out, and so does the diagnosis.</p>
+
+                <p><strong>Not a fit if:</strong> your ads have been running less than 2–3 months. There is not enough history to read.</p>
+              </div>
             </details>
 
-            <p><strong>Not a fit if:</strong> your ads have been running less than 2–3 months. There is not enough history to read.</p>
             <div class="section-actions">
               <a class="btn btn-secondary" href="https://links.avenquell.com/review">Get the Ad Diagnostic →</a>
             </div>
