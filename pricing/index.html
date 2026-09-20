@@ -159,8 +159,15 @@
       height: 100%;
     }
 
-    .pricing-card-full {
-      grid-column: 1 / -1;
+    /* Diagnose cards should stay in the same visual row on desktop.
+       Ad Diagnostic is intentionally detailed, but it should not span the full page. */
+    .pricing-diagnose-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: start;
+    }
+
+    .pricing-diagnose-grid .pricing-card {
+      height: auto;
     }
 
     .pricing-card h4 {
@@ -210,13 +217,19 @@
       margin-top: 20px;
     }
 
+    @media (max-width: 1120px) and (min-width: 861px) {
+      .pricing-diagnose-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 860px) {
       .pricing-service-grid {
         grid-template-columns: 1fr;
       }
 
-      .pricing-card-full {
-        grid-column: auto;
+      .pricing-diagnose-grid {
+        grid-template-columns: 1fr;
       }
 
       .pricing-service-section + .pricing-service-section {
@@ -379,7 +392,7 @@
           <h2>Paid diagnostics that tell you what is wrong, in writing, before you spend more.</h2>
         </div>
 
-        <div class="pricing-service-grid">
+        <div class="pricing-service-grid pricing-diagnose-grid">
           <article class="pricing-card">
             <span class="pricing-label">One-time · 3 business days</span>
             <h3>Premium Visual Audit</h3>
@@ -392,7 +405,7 @@
             <a class="btn btn-secondary" href="/contact/">Book the Audit</a>
           </article>
 
-          <article class="pricing-card pricing-card-full">
+          <article class="pricing-card">
             <span class="pricing-label">One-time · 5 business days</span>
             <h3>Ad Diagnostic</h3>
             <div class="pricing-amount">$3,500</div>
