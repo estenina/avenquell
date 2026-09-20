@@ -194,7 +194,40 @@
       scroll-margin-top: 120px;
     }
 
+    /* Compact vertical rhythm between the service and information sections. */
+    .services-section {
+      padding-bottom: 24px !important;
+    }
+
+    #diagnose,
+    #fix,
+    #grow,
+    .fit-section,
+    .deliverables-section,
+    .process-section,
+    .product-accuracy-section,
+    .not-do-section {
+      padding-top: 24px !important;
+      padding-bottom: 24px !important;
+    }
+
     @media (max-width: 860px) {
+      .services-section {
+        padding-bottom: 14px !important;
+      }
+
+      #diagnose,
+      #fix,
+      #grow,
+      .fit-section,
+      .deliverables-section,
+      .process-section,
+      .product-accuracy-section,
+      .not-do-section {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+      }
+
       .services-stage-map-grid {
         grid-template-columns: 1fr;
       }
@@ -655,7 +688,7 @@
     <!-- ═══════════════════════════
          05 · PROCESS — LINK TO METHOD
     ════════════════════════════ -->
-    <section class="section">
+    <section class="section process-section">
       <div class="container split">
         <div>
           <span class="eyebrow">Process</span>
@@ -675,7 +708,7 @@
     <!-- ═══════════════════════════
          06 · PRODUCT ACCURACY
     ════════════════════════════ -->
-    <section class="section">
+    <section class="section product-accuracy-section">
       <div class="container split">
         <div>
           <span class="eyebrow">Product Accuracy / Brand Control</span>
